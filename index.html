@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinTech Learning Portal</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f6fb;
+}
+
+.grid-container{
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+gap:40px;
+padding:60px;
+max-width:1200px;
+margin:auto;
+}
+
+@media (max-width: 992px){
+.grid-container{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px){
+.grid-container{ grid-template-columns: 1fr; }
+}
+
+.glass-card{
+background:white;
+border-radius:18px;
+padding:35px 30px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+position:relative;
+transition:0.3s;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.glass-card:hover{ transform:translateY(-6px); }
+
+.brand-tag{
+position:absolute;
+top:18px;
+right:18px;
+color:white;
+font-size:12px;
+padding:6px 14px;
+border-radius:20px;
+font-weight:600;
+}
+
+.icon{
+font-size:36px;
+margin-bottom:15px;
+display:block;
+text-align:left;
+}
+
+.glass-card h2{
+margin:10px 0 15px 0;
+text-align:center;
+font-size:22px;
+font-weight:600;
+}
+
+.glass-card p{
+text-align:center;
+color:#555;
+margin-bottom:25px;
+line-height:1.6;
+}
+
+.glass-card button{
+padding:13px;
+border:none;
+border-radius:10px;
+background:#d4c5f9;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.glass-card button:hover{
+background:#c0aef5;
+}
+
+</style>
+</head>
+
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<img src="logo.jpeg" class="logo" alt="Logo" style="max-height:240px;">
+
+<div class="content">
+<header>
+<h1 id="main-title">Financial Learning Platform</h1>
+<p id="main-sub">Master your money through interactive modules</p>
+</header>
+
+<div class="lang-dropdown-wrapper">
+<button class="lang-btn-trigger" onclick="toggleLangMenu()">
+<i class="fas fa-globe"></i> Select Language
+<i class="fas fa-chevron-down"></i>
+</button>
+
+<div id="langMenu" class="dropdown-content">
+<button onclick="changeLanguage('en')">English</button>
+<button onclick="changeLanguage('hi')">हिंदी</button>
+<button onclick="changeLanguage('mr')">मराठी</button>
+<button onclick="changeLanguage('te')">తెలుగు</button>
+<button onclick="changeLanguage('or')">ଓଡ଼ିଆ</button>
+</div>
+</div>
+
+<div class="grid-container">
+
+<div class="glass-card life-insurance featured">
+<div class="brand-tag" id="tag-life" style="background:#8b5cf6;">Wealth + Cover</div>
+<i class="fas fa-hand-holding-heart icon" style="color:#8b5cf6;"></i>
+<h2 id="h-life">Life Insurance</h2>
+<p id="p-life">Beyond term plans: Explore Endowment, ULIPs, and Whole Life coverage.</p>
+<button id="btn-life" onclick="window.location.href='life.insurance.html'">Enter</button>
+</div>
+
+<div class="glass-card term-insurance">
+<div class="brand-tag" id="tag-term" style="background:#01583b;">Best Value</div>
+<i class="fas fa-shield-alt icon" style="color:#0c523a;"></i>
+<h2 id="h-term">Term Insurance</h2>
+<p id="p-term">High coverage at low premiums to secure your family's financial future.</p>
+<button id="btn-term" onclick="window.location.href='term-insurance-info.html'">Enter Vault</button>
+</div>
+
+<div class="glass-card health-insurance">
+<div class="brand-tag" id="tag-health" style="background:#ef4444;">Medical Security</div>
+<i class="fas fa-heartbeat icon" style="color:#ef4444;"></i>
+<h2 id="h-health">Health Insurance</h2>
+<p id="p-health">Cover hospital bills, critical illnesses, and protect your savings.</p>
+<button id="btn-health" onclick="window.location.href='health.insurance.html'">Check Cover</button>
+</div>
+
+<div class="glass-card crop-insurance">
+<div class="brand-tag" id="tag-crop" style="background:#059669;">Agri-Shield</div>
+<i class="fas fa-seedling icon" style="color:#10b981;"></i>
+<h2 id="h-crop">Crop Insurance</h2>
+<p id="p-crop">Protect against yield loss due to weather, pests, or natural calamities.</p>
+<button id="btn-crop" onclick="window.location.href='crop.insurance.html'">Secure Harvest</button>
+</div>
+
+<div class="glass-card travel-insurance">
+<div class="brand-tag" id="tag-travel" style="background:#0ea5e9;">Global Cover</div>
+<i class="fas fa-plane-departure icon" style="color:#0ea5e9;"></i>
+<h2 id="h-travel">Travel Insurance</h2>
+<p id="p-travel">Coverage for medical emergencies, trip cancellations, and lost baggage.</p>
+<button id="btn-travel" onclick="window.location.href='travl.insurance.html'">Plan Trip</button>
+</div>
+
+<div class="glass-card investment">
+<i class="fas fa-chart-area icon" style="color:hsl(182,86%,25%);"></i>
+<h2 id="h-invest">Investment</h2>
+<p id="p-invest">Learn asset allocation and wealth building strategies.</p>
+<button id="btn-invest" onclick="window.location.href='investment.html'">Grow Wealth</button>
+</div>
+
+<div class="glass-card motor-insurance">
+<div class="brand-tag" id="tag-motor" style="background:#a855f7;">Vehicle Protect</div>
+<i class="fas fa-car-side icon" style="color:#a855f7;"></i>
+<h2 id="h-motor">Motor Insurance</h2>
+<p id="p-motor">Comprehensive cover for your car and bike against accidents, theft, and third-party liabilities.</p>
+<button id="btn-motor" onclick="window.location.href='motor-insurance.html'">Insure Ride</button>
+</div>
+
+<div class="glass-card mutual-funds">
+<i class="fas fa-layer-group icon" style="color:#f59e0b;"></i>
+<h2 id="h-mf">Mutual Funds</h2>
+<p id="p-mf">Understand SIPs and building diversified portfolios.</p>
+<button id="btn-mf" onclick="window.location.href='mutualfund.html'">Analyze SIP</button>
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+<footer class="footer-dark-bold">
+<div class="footer-inner">
+<h2 class="brand-main">PAISABADA FINANCIAL SERVICES</h2>
+<p>&copy; 2026 Paisabada™ Financial Services.</p>
+<p>Powered by Wealtrix™ Fintech Pvt Ltd.</p>
+<p style="font-size:0.8rem;opacity:0.6;margin-top:10px;">
+ESTD 2026 | ALL RIGHTS RESERVED
+</p>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>लाइफ इन्शुरन्स मास्टरक्लास</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --life-primary: #7c3aed; /* Deep Purple */
+            --life-light: #f5f3ff;   /* Soft Lavender */
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f1f5f9;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--life-primary);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--life-primary); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--life-primary); margin-top: 40px; border-bottom: 2px solid var(--life-light); }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            padding: 20px;
+            border-radius: 12px;
+            background: var(--life-light);
+        }
+
+        .adv-box { border-top: 5px solid #22c55e; background: #f0fdf4; }
+        .dis-box { border-top: 5px solid #f97316; background: #fff7ed; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-section {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn-submit {
+            background: var(--life-primary);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: opacity 0.3s;
+        }
+
+        .btn-submit:hover { opacity: 0.9; }
+
+        @media (max-width: 600px) {
+            .grid-info { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--life-primary); font-weight:bold;">← हब कडे परत जा</a>
+        <h1>लाइफ इन्शुरन्स (जीवन विमा)</h1>
+        <p>तुमच्या कुटुंबाचे भविष्य सुरक्षित करा आणि तुमच्या अनुपस्थितीतही त्यांची आर्थिक प्रतिष्ठा टिकवून ठेवा.</p>
+    </div>
+
+    <section>
+        <h2>जीवन विमा म्हणजे काय?</h2>
+        <p>जीवन विमा हा तुमच्यातील आणि विमा कंपनीमधील एक आर्थिक करार आहे, ज्यामध्ये तुम्ही कंपनीला <b>प्रीमियम (हप्ता)</b> भरता. त्याबदल्यात, जर तुम्हाला काही झाले, तर कंपनी तुमच्या कुटुंबाला <b>विमा रक्कम (Sum Assured)</b> प्रदान करते. हे उत्पन्नाची कमतरता भरून काढण्यासाठी आणि मुलांचे शिक्षण किंवा कर्ज फेडणे यांसारखी भविष्यातील उद्दिष्टे पूर्ण करण्यासाठी एक आर्थिक सुरक्षा जाळे म्हणून काम करते.</p>
+    </section>
+
+    <section>
+        <h2>प्रकार आणि फायदे</h2>
+        <div class="info-card">
+            <ul>
+                <li><strong>टर्म इन्शुरन्स:</strong> ठराविक कालावधीसाठी कमीत कमी खर्चात जास्तीत जास्त जीवन सुरक्षा.</li>
+                <li><strong>होल लाइफ कव्हर:</strong> वयाच्या ९९ किंवा १०० वर्षांपर्यंत, तुमच्या संपूर्ण आयुष्यासाठी संरक्षण देते.</li>
+                <li><strong>डेथ बेनिफिट:</strong> तुमच्या वारसांना (Nominees) मिळणारी करमुक्त एकरकमी रक्कम.</li>
+                <li><strong>कर्ज संरक्षण:</strong> तुमच्या कुटुंबाला गृहकर्ज किंवा वैयक्तिक कर्जाच्या ओझ्यापासून वाचवण्यास मदत करते.</li>
+                <li><strong>संपत्ती निर्मिती:</strong> ULIP सारखे पर्याय तुम्हाला विम्यासह गुंतवणूक वाढवण्याची संधी देतात.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid-info">
+            <div class="info-card adv-box">
+                <h3><i class="fas fa-hand-holding-heart"></i> प्रमुख फायदे</h3>
+                <ul>
+                    <li>कुटुंबासाठी शाश्वत आर्थिक सुरक्षा.</li>
+                    <li>कलम 80C अंतर्गत कर सवलत (१.५ लाखांपर्यंत).</li>
+                    <li>कमी वयात खरेदी केल्यास अत्यंत कमी प्रीमियम.</li>
+                    <li>शिस्तबद्ध दीर्घकालीन बचतीची सवय लावते.</li>
+                </ul>
+            </div>
+            <div class="info-card dis-box">
+                <h3><i class="fas fa-info-circle"></i> महत्त्वाच्या बाबी</h3>
+                <ul>
+                    <li>वाढती महागाई भविष्यात विम्याच्या रकमेचे मूल्य कमी करू शकते.</li>
+                    <li><strong>लॉक-इन कालावधी:</strong> पॉलिसीमधून लवकर बाहेर पडल्यास आर्थिक नुकसान होऊ शकते.</li>
+                    <li>धुम्रपान किंवा मद्यपान यांसारख्या सवयींमुळे प्रीमियम वाढू शकतो.</li>
+                    <li>शुद्ध टर्म इन्शुरन्समध्ये मुदत संपल्यानंतर कोणतीही 'मॅच्युरिटी' रक्कम मिळत नाही.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-section">
+        <h2>त्वरित चाचणी: लाइफ इन्शुरन्स IQ</h2>
+        <form id="lifeQuiz">
+            <p><b>१. कोणती पॉलिसी सर्वात कमी प्रीमियममध्ये सर्वाधिक विमा संरक्षण देते?</b></p>
+            <label><input type="radio" name="q1" value="correct"> टर्म इन्शुरन्स (Term Insurance)</label><br>
+            <label><input type="radio" name="q1" value="wrong"> एंडोमेंट प्लॅन (Endowment Plan)</label>
+
+            <p><b>२. जीवन विमा प्रीमियमसाठी तुम्ही कोणत्या कलमांतर्गत कर सवलतीचा दावा करू शकता?</b></p>
+            <label><input type="radio" name="q2" value="correct"> कलम 80C (Section 80C)</label><br>
+            <label><input type="radio" name="q2" value="wrong"> कलम 80D (Section 80D)</label>
+
+            <p style="margin-top:20px;"><b>प्रमाणपत्रासाठी नाव प्रविष्ट करा:</b></p>
+            <input type="text" id="userName" placeholder="तुमचे पूर्ण नाव" style="width:100%; padding:10px; margin-bottom:20px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <button type="button" class="btn-submit" onclick="checkLifeScore()">प्रस्तुत करा आणि प्रमाणपत्र मिळवा</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function checkLifeScore() {
+        const name = document.getElementById('userName').value;
+        if(!name) { alert("कृपया तुमचे नाव प्रविष्ट करा"); return; }
+
+        let score = 0;
+        const answers = new FormData(document.getElementById('lifeQuiz'));
+        for(let v of answers.values()) { if(v === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("उत्कृष्ट! तुम्ही भविष्यातील आर्थिक नियोजनासाठी तयार आहात. तुम्हाला तुमच्या प्रमाणपत्राकडे नेले जात आहे...");
+            window.location.href = "certificate.html";
+        } else {
+            alert("क्षमस्व! कृपया माहिती पुन्हा वाचा आणि प्रमाणपत्र मिळवण्यासाठी अचूक उत्तरे द्या.");
+        }
+    }
+</script>
+
+</body>
+</html>

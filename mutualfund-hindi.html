@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>म्यूचुअल फंड मास्टरक्लास</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --mf-primary: #f59e0b; /* एम्बर/ऑरेंज रंग */
+            --mf-light: #fffbeb;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f1f5f9;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--mf-primary);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--mf-primary); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--mf-primary); margin-top: 40px; border-bottom: 2px solid var(--mf-light); }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            padding: 20px;
+            border-radius: 12px;
+            background: var(--mf-light);
+        }
+
+        .adv-box { border-top: 5px solid #22c55e; background: #f0fdf4; }
+        .dis-box { border-top: 5px solid #ef4444; background: #fef2f2; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-section {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn-submit {
+            background: var(--mf-primary);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.9;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--mf-primary); font-weight:bold;">← वापस हब पर जाएं</a>
+        <h1>म्यूचुअल फंड (Mutual Funds)</h1>
+        <p>अपने संसाधनों को एक साथ जोड़ें और विशेषज्ञों को विविधीकृत निवेश के माध्यम से आपकी संपत्ति बढ़ाने दें।</p>
+    </div>
+
+    <section>
+        <h2>म्यूचुअल फंड क्या है?</h2>
+        <p>म्यूचुअल फंड एक वित्तीय साधन है जो कई निवेशकों से पैसा इकट्ठा करता है ताकि स्टॉक, बॉन्ड और शॉर्ट-टर्म डेट जैसी प्रतिभूतियां खरीदी जा सकें। फंड की कुल होल्डिंग्स को उसके <b>पोर्टफोलियो (Portfolio)</b> के रूप में जाना जाता है। प्रत्येक निवेशक के पास शेयर होते हैं, जो इन होल्डिंग्स के एक हिस्से का प्रतिनिधित्व करते हैं, जिसका प्रबंधन एक पेशेवर <b>फंड मैनेजर</b> द्वारा किया जाता है।</p>
+        
+        
+    </section>
+
+    <section>
+        <h2>प्रमुख अवधारणाएं और विशेषताएं</h2>
+        <div class="info-card">
+            <ul>
+                <li><strong>NAV (नेट एसेट वैल्यू):</strong> म्यूचुअल फंड योजना की एक इकाई (यूनिट) का बाजार मूल्य।</li>
+                <li><strong>SIP (सिस्टमैटिक इन्वेस्टमेंट प्लान):</strong> कंपाउंडिंग का लाभ उठाने के लिए नियमित रूप से (मासिक/तिमाही) एक निश्चित राशि निवेश करना।</li>
+                <li><strong>विविधीकरण (Diversification):</strong> जोखिम कम करने के लिए अपने पैसे को अलग-अलग क्षेत्रों में फैलाना।</li>
+                <li><strong>व्यय अनुपात (Expense Ratio):</strong> आपके पैसे के प्रबंधन के लिए फंड हाउस द्वारा लिया जाने वाला वार्षिक शुल्क।</li>
+                <li><strong>ELSS (टैक्स सेविंग):</strong> इक्विटी लिंक्ड सेविंग्स स्कीम जो धारा 80C के तहत टैक्स छूट प्रदान करती है।</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid-info">
+            <div class="info-card adv-box">
+                <h3><i class="fas fa-chart-line"></i> फायदे</h3>
+                <ul>
+                    <li>विशेषज्ञ फंड मैनेजरों द्वारा पेशेवर प्रबंधन।</li>
+                    <li>कम निवेश राशि के साथ भी विविधीकरण का लाभ।</li>
+                    <li>उच्च तरलता (Liquidity) - किसी भी कार्य दिवस पर पैसा निकाला जा सकता है।</li>
+                    <li>SEBI द्वारा विनियमित, जो पारदर्शिता सुनिश्चित करता है।</li>
+                </ul>
+            </div>
+            <div class="info-card dis-box">
+                <h3><i class="fas fa-exclamation-triangle"></i> जोखिम</h3>
+                <ul>
+                    <li>बाजार जोखिम: रिटर्न की गारंटी नहीं होती और यह बाजार के साथ घटता-बढ़ता रहता है।</li>
+                    <li>प्रबंधन शुल्क: फंड का प्रदर्शन खराब होने पर भी लागत चुकानी पड़ती है।</li>
+                    <li>एग्जिट लोड (Exit Load): समय से पहले पैसा निकालने पर लगने वाला शुल्क।</li>
+                    <li>पोर्टफोलियो में व्यक्तिगत स्टॉक चयन पर आपका कोई नियंत्रण नहीं होता।</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-section">
+        <h2>त्वरित जांच: म्यूचुअल फंड मास्टरी</h2>
+        <form id="mfQuiz">
+            <p><b>1. "SIP" का पूर्ण रूप क्या है?</b></p>
+            <label><input type="radio" name="q1" value="correct"> सिस्टमैटिक इन्वेस्टमेंट प्लान (Systematic Investment Plan)</label><br>
+            <label><input type="radio" name="q1" value="wrong"> स्टैंडर्ड इंटरनल पोर्टफोलियो (Standard Internal Portfolio)</label>
+
+            <p><b>2. कौन सी योजना धारा 80C के तहत कर लाभ प्रदान करती है?</b></p>
+            <label><input type="radio" name="q2" value="wrong"> लिक्विड फंड (Liquid Fund)</label><br>
+            <label><input type="radio" name="q2" value="correct"> ELSS (Equity Linked Savings Scheme)</label>
+
+            <p style="margin-top:20px;"><b>प्रमाण पत्र के लिए नाम दर्ज करें:</b></p>
+            <input type="text" id="userName" placeholder="आपका नाम">
+            
+            <button type="button" class="btn-submit" onclick="checkMFScore()">सबमिट करें और प्रमाण पत्र प्राप्त करें</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function checkMFScore() {
+        const name = document.getElementById('userName').value;
+        if(!name) { alert("कृपया अपना नाम दर्ज करें"); return; }
+
+        let score = 0;
+        const answers = new FormData(document.getElementById('mfQuiz'));
+        for(let v of answers.values()) { if(v === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("उत्कृष्ट! आपने म्यूचुअल फंड की बुनियादी बातों में महारत हासिल कर ली है। रिडायरेक्ट किया जा रहा है...");
+            window.location.href = "certificate.html";
+        } else {
+            alert("प्रमाण पत्र अर्जित करने के लिए कृपया सभी प्रश्नों के सही उत्तर दें!");
+        }
+    }
+</script>
+
+</body>
+</html>

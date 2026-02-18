@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Insurance - Vehicle Protection Masterclass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --motor-blue: #2563eb;
+            --motor-light: #eff6ff;
+            --navy: #0f172a;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--motor-blue);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--motor-blue); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--motor-blue); margin-top: 40px; border-bottom: 2px solid var(--motor-light); padding-bottom: 5px; }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .benefit-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .benefit-item:hover { transform: translateY(-5px); border-color: var(--motor-blue); }
+
+        .benefit-item i { color: var(--motor-blue); font-size: 1.8rem; margin-bottom: 15px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #2563eb; background: #eff6ff; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #64748b; background: #f1f5f9; padding: 25px; border-radius: 12px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #0f172a;
+            color: white;
+            border-radius: 12px;
+        }
+
+        .quiz-box h2 { color: var(--motor-blue); border-color: #334155; }
+
+        .btn-submit {
+            background: var(--motor-blue);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) { .pro-con-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--motor-blue); font-weight:bold;">← Back to Learning Hub</a>
+        <h1>Motor Insurance</h1>
+        <p>Comprehensive financial protection for your cars, bikes, and commercial vehicles.</p>
+    </div>
+
+    <section>
+        <h2>What is Motor Insurance?</h2>
+        <p>Motor insurance is a legal agreement between a vehicle owner and an insurance provider. It protects you against <b>financial liabilities</b> arising from accidents, theft, or damage to your vehicle. In many countries, holding at least "Third-Party" insurance is a mandatory legal requirement for driving on public roads.</p>
+    </section>
+
+    
+
+    <section>
+        <h2>Key Benefits & Uses</h2>
+        <div class="benefit-grid">
+            <div class="benefit-item">
+                <i class="fas fa-car-crash"></i>
+                <strong>Accident Coverage:</strong>
+                Covers the cost of repairs for your vehicle following a collision or accident.
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-user-shield"></i>
+                <strong>Third-Party Liability:</strong>
+                Protects you legally and financially if your vehicle causes injury or damage to another person or their property.
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-mask"></i>
+                <strong>Theft Protection:</strong>
+                Compensates you for the market value (IDV) of your vehicle if it is stolen.
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <strong>Natural Calamities:</strong>
+                Provides funds for repairs caused by floods, earthquakes, fire, or storms.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-check-circle"></i> Advantages</h3>
+                <ul>
+                    <li><strong>Legal Safety:</strong> Avoid heavy traffic fines and license suspension.</li>
+                    <li><strong>No Claim Bonus (NCB):</strong> Earn significant discounts on premiums for every accident-free year.</li>
+                    <li><strong>Cashless Repairs:</strong> Access a wide network of partner garages for hassle-free service.</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-exclamation-circle"></i> Disadvantages</h3>
+                <ul>
+                    <li><strong>Depreciation:</strong> Standard policies don't cover the full cost of replaced parts due to wear and tear.</li>
+                    <li><strong>Exclusions:</strong> Driving under the influence or without a license voids all claims.</li>
+                    <li><strong>Premium Costs:</strong> High-end cars or young drivers often face very expensive premiums.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>Motor Protection Quiz</h2>
+        <form id="motorQuiz">
+            <p><b>1. Which type of insurance is mandatory by law to drive on public roads?</b></p>
+            <label><input type="radio" name="mq1" value="correct"> Third-Party Liability Insurance</label><br>
+            <label><input type="radio" name="mq1" value="wrong"> Personal Accidental Life Cover</label>
+
+            <p><b>2. What is the 'No Claim Bonus' (NCB) in motor insurance?</b></p>
+            <label><input type="radio" name="mq2" value="wrong"> A penalty for making too many claims.</label><br>
+            <label><input type="radio" name="mq2" value="correct"> A discount given for not making any claims during the policy year.</label>
+
+            <p style="margin-top:20px;"><b>Driver's Name:</b></p>
+            <input type="text" id="driverName" placeholder="Enter Full Name" style="width:100%; padding:12px; margin-bottom:10px; border-radius:6px; border:none; color: #000;">
+            
+            <button type="button" class="btn-submit" onclick="validateMotorQuiz()">Claim Your Vehicle Master Certificate</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateMotorQuiz() {
+        const name = document.getElementById('driverName').value;
+        if(!name) { alert("Please enter your name!"); return; }
+
+        let score = 0;
+        const q1 = document.querySelector('input[name="mq1"]:checked')?.value;
+        const q2 = document.querySelector('input[name="mq2"]:checked')?.value;
+
+        if(q1 === "correct") score++;
+        if(q2 === "correct") score++;
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("Congratulations! You've mastered the Motor Insurance basics.");
+            // Change this to your certificate page
+            window.location.href = "certificate.html"; 
+        } else {
+            alert("Oops! Please review the sections above and try the quiz again.");
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ଲାଇଫ୍ ଇନସୁରାନ୍ସ ମାଷ୍ଟରକ୍ଲାସ୍</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --life-primary: #7c3aed; /* Deep Purple */
+            --life-light: #f5f3ff;   /* Soft Lavender */
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f1f5f9;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--life-primary);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--life-primary); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--life-primary); margin-top: 40px; border-bottom: 2px solid var(--life-light); }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            padding: 20px;
+            border-radius: 12px;
+            background: var(--life-light);
+        }
+
+        .adv-box { border-top: 5px solid #22c55e; background: #f0fdf4; }
+        .dis-box { border-top: 5px solid #f97316; background: #fff7ed; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-section {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn-submit {
+            background: var(--life-primary);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: opacity 0.3s;
+        }
+
+        .btn-submit:hover { opacity: 0.9; }
+
+        @media (max-width: 600px) {
+            .grid-info { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--life-primary); font-weight:bold;">← ହବ୍‌କୁ ଫେରିଯାଆନ୍ତୁ</a>
+        <h1>ଲାଇଫ୍ ଇନସୁରାନ୍ସ (ଜୀବନ ବୀମା)</h1>
+        <p>ଆପଣଙ୍କ ପରିବାରର ଭବିଷ୍ୟତ ସୁରକ୍ଷିତ କରନ୍ତୁ ଏବଂ ଆପଣଙ୍କ ଅନୁପସ୍ଥିତିରେ ମଧ୍ୟ ସେମାନଙ୍କ ଆର୍ଥିକ ସମ୍ମାନ ବଜାୟ ରଖନ୍ତୁ।</p>
+    </div>
+
+    <section>
+        <h2>ଜୀବନ ବୀମା କ’ଣ?</h2>
+        <p>ଜୀବନ ବୀମା ହେଉଛି ଆପଣ ଏବଂ ବୀମା କମ୍ପାନୀ ମଧ୍ୟରେ ଏକ ଆର୍ଥିକ ଚୁକ୍ତି, ଯେଉଁଥିରେ ଆପଣ କମ୍ପାନୀକୁ <b>ପ୍ରିମିୟମ୍ (କିସ୍ତି)</b> ପ୍ରଦାନ କରନ୍ତି। ବଦଳରେ, ଯଦି ଆପଣଙ୍କର କିଛି ଅଘଟଣ ଘଟେ, ତେବେ କମ୍ପାନୀ ଆପଣଙ୍କ ପରିବାରକୁ <b>ବୀମା ରାଶି (Sum Assured)</b> ପ୍ରଦାନ କରେ। ଏହା ଆୟର ଅଭାବକୁ ପୂରଣ କରିବା ଏବଂ ପିଲାମାନଙ୍କ ଶିକ୍ଷା କିମ୍ବା ଋଣ ପରିଶୋଧ ଭଳି ଭବିଷ୍ୟତର ଲକ୍ଷ୍ୟ ପୂରଣ ପାଇଁ ଏକ ଆର୍ଥିକ ସୁରକ୍ଷା କବଚ ଭାବରେ କାମ କରେ।</p>
+    </section>
+
+    <section>
+        <h2>ପ୍ରକାର ଏବଂ ଲାଭ</h2>
+        <div class="info-card">
+            <ul>
+                <li><strong>ଟର୍ମ ଇନସୁରାନ୍ସ:</strong> ଏକ ନିଶ୍ଚିତ ସମୟ ପାଇଁ ସବୁଠାରୁ କମ୍ ଖର୍ଚ୍ଚରେ ସର୍ବାଧିକ ଜୀବନ ସୁରକ୍ଷା।</li>
+                <li><strong>ହୋଲ୍ ଲାଇଫ୍ କଭର:</strong> ୯୯ କିମ୍ବା ୧୦୦ ବର୍ଷ ବୟସ ପର୍ଯ୍ୟନ୍ତ, ଆପଣଙ୍କ ସମଗ୍ର ଜୀବନ ପାଇଁ ସୁରକ୍ଷା ଦିଏ।</li>
+                <li><strong>ଡେଥ୍ ବେନିଫିଟ୍:</strong> ଆପଣଙ୍କ ଉତ୍ତରାଧିକାରୀ (Nominees) ଙ୍କୁ ମିଳୁଥିବା କରମୁକ୍ତ ଏକକାଳୀନ ରାଶି।</li>
+                <li><strong>ଋଣ ସୁରକ୍ଷା:</strong> ଆପଣଙ୍କ ପରିବାରକୁ ଗୃହ ଋଣ କିମ୍ବା ବ୍ୟକ୍ତିଗତ ଋଣର ବୋଝରୁ ରକ୍ଷା କରିବାରେ ସାହାଯ୍ୟ କରେ।</li>
+                <li><strong>ସମ୍ପତ୍ତି ସୃଷ୍ଟି:</strong> ULIP ଭଳି ବିକଳ୍ପ ଆପଣଙ୍କୁ ବୀମା ସହିତ ପୁଞ୍ଜି ବୃଦ୍ଧି କରିବାର ସୁଯୋଗ ଦିଏ।</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid-info">
+            <div class="info-card adv-box">
+                <h3><i class="fas fa-hand-holding-heart"></i> ମୁଖ୍ୟ ଲାଭ</h3>
+                <ul>
+                    <li>ପରିବାର ପାଇଁ ସୁନିଶ୍ଚିତ ଆର୍ଥିକ ସୁରକ୍ଷା।</li>
+                    <li>ଧାରା 80C ଅଧୀନରେ ଟିକସ ରିହାତି (୧.୫ ଲକ୍ଷ ପର୍ଯ୍ୟନ୍ତ)।</li>
+                    <li>କମ୍ ବୟସରେ କିଣିଲେ ଅତି କମ୍ ପ୍ରିମିୟମ୍‌।</li>
+                    <li>ଅନୁଶାସିତ ଦୀର୍ଘକାଳୀନ ସଞ୍ଚୟ ଅଭ୍ୟାସକୁ ପ୍ରୋତ୍ସାହିତ କରେ।</li>
+                </ul>
+            </div>
+            <div class="info-card dis-box">
+                <h3><i class="fas fa-info-circle"></i> ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଦିଗ</h3>
+                <ul>
+                    <li>ବଢୁଥିବା ମୁଦ୍ରାସ୍ଫୀତି ଭବିଷ୍ୟତରେ ବୀମା ରାଶିର ମୂଲ୍ୟ ହ୍ରାସ କରିପାରେ।</li>
+                    <li><strong>ଲକ୍-ଇନ୍ ଅବଧି:</strong> ଯୋଜନାରୁ ଶୀଘ୍ର ବାହାରିଲେ ଆର୍ଥିକ କ୍ଷତି ହୋଇପାରେ।</li>
+                    <li>ଧୂମପାନ କିମ୍ବା ମଦ୍ୟପାନ ଭଳି ଅଭ୍ୟାସ ଯୋଗୁଁ ପ୍ରିମିୟମ୍ ବଢ଼ିପାରେ।</li>
+                    <li>ଟର୍ମ ଇନସୁରାନ୍ସରେ ମିଆଦ ଶେଷ ହେବା ପରେ କୌଣସି "ମାଚ୍ୟୁରିଟି" ରାଶି ମିଳେ ନାହିଁ।</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-section">
+        <h2>ତୁରନ୍ତ ପରୀକ୍ଷା: ଜୀବନ ବୀମା IQ</h2>
+        <form id="lifeQuiz">
+            <p><b>୧. କେଉଁ ପଲିସି ସବୁଠାରୁ କମ୍ ପ୍ରିମିୟମ୍‌ରେ ସର୍ବାଧିକ ଜୀବନ ସୁରକ୍ଷା ପ୍ରଦାନ କରେ?</b></p>
+            <label><input type="radio" name="q1" value="correct"> ଟର୍ମ ଇନସୁରାନ୍ସ (Term Insurance)</label><br>
+            <label><input type="radio" name="q1" value="wrong"> ଏଣ୍ଡୋମେଣ୍ଟ ପ୍ଲାନ (Endowment Plan)</label>
+
+            <p><b>୨. ଜୀବନ ବୀମା ପ୍ରିମିୟମ୍ ପାଇଁ ଆପଣ କେଉଁ ଧାରା ଅଧୀନରେ ଟିକସ ରିହାତି ଦାବି କରିପାରିବେ?</b></p>
+            <label><input type="radio" name="q2" value="correct"> ଧାରା 80C (Section 80C)</label><br>
+            <label><input type="radio" name="q2" value="wrong"> ଧାରା 80D (Section 80D)</label>
+
+            <p style="margin-top:20px;"><b>ପ୍ରମାଣପତ୍ର ପାଇଁ ନାମ ଲେଖନ୍ତୁ:</b></p>
+            <input type="text" id="userName" placeholder="ଆପଣଙ୍କ ପୂରା ନାମ" style="width:100%; padding:10px; margin-bottom:20px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <button type="button" class="btn-submit" onclick="checkLifeScore()">ସବମିଟ୍ କରନ୍ତୁ ଏବଂ ସାର୍ଟିଫିକେଟ୍ ପାଆନ୍ତୁ</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function checkLifeScore() {
+        const name = document.getElementById('userName').value;
+        if(!name) { alert("ଦୟାକରି ଆପଣଙ୍କ ନାମ ଲେଖନ୍ତୁ"); return; }
+
+        let score = 0;
+        const answers = new FormData(document.getElementById('lifeQuiz'));
+        for(let v of answers.values()) { if(v === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("ଶାନଦାର୍! ଆପଣ ନିଜର ଆର୍ଥିକ ଭବିଷ୍ୟତ ସୁରକ୍ଷିତ କରିବାକୁ ପ୍ରସ୍ତୁତ। ଆପଣଙ୍କୁ ପ୍ରମାଣପତ୍ର ପୃଷ୍ଠାକୁ ନିଆଯାଉଛି...");
+            window.location.href = "certificate.html";
+        } else {
+            alert("କ୍ଷମା କରିବେ! ଦୟାକରି ସୂଚନାଗୁଡ଼ିକୁ ପୁଣି ପଢ଼ନ୍ତୁ ଏବଂ ପ୍ରମାଣପତ୍ର ପାଇବା ପାଇଁ ସଠିକ୍ ଉତ୍ତର ଦିଅନ୍ତୁ।");
+        }
+    }
+</script>
+
+</body>
+</html>

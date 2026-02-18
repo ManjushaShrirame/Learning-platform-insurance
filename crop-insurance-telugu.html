@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ఫసల్ బీమా - అగ్రి-షీల్డ్ మాస్టర్‌క్లాస్</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --agri-green: #059669;
+            --agri-light: #ecfdf5;
+            --earth-brown: #78350f;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f0fdf4;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--agri-green);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--agri-green); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--agri-green); margin-top: 40px; border-bottom: 2px solid var(--agri-light); padding-bottom: 5px; }
+        h3 { color: var(--earth-brown); margin-top: 0; }
+
+        .info-card {
+            padding: 25px;
+            border-radius: 12px;
+            background: var(--agri-light);
+            margin-bottom: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #d1fae5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .feature-item i { color: var(--agri-green); font-size: 1.5rem; margin-bottom: 10px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #10b981; background: #f0fdf4; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #f59e0b; background: #fffbeb; padding: 25px; border-radius: 12px; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 2px dashed var(--agri-green);
+        }
+
+        .btn-submit {
+            background: var(--agri-green);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { background: #047857; }
+
+        @media (max-width: 600px) {
+            .pro-con-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--agri-green); font-weight:bold;">← లెర్నింగ్ హబ్‌కి తిరిగి వెళ్లండి</a>
+        <h1>ఫసల్ బీమా (పంట బీమా)</h1>
+        <p>ప్రకృతి వైపరీత్యాల నుండి వ్యవసాయ పునాదిని రక్షించడం.</p>
+    </div>
+
+    <section>
+        <h2>పంట బీమా అంటే ఏమిటి?</h2>
+        <p>పంట బీమా అనేది ఒక ప్రత్యేక ఆర్థిక రక్షణ పథకం. ఇది పంట నష్టం వల్ల రైతులకు కలిగే ఆర్థిక నష్టాన్ని భర్తీ చేస్తుంది. ఈ పంట నష్టం ప్రకృతి వైపరీత్యాలైన <b>కరువులు, వరదలు, వడగళ్ల వానలు లేదా భూపాతాలు</b> వంటి వాటి వల్ల కావచ్చు లేదా <b>తెగుళ్లు మరియు వ్యాధుల</b> వంటి జీవసంబంధమైన రిస్క్‌ల వల్ల కావచ్చు.</p>
+        
+        <p>చాలా ప్రాంతాలలో, ప్రభుత్వం ఈ బీమాను రైతులకు అందుబాటులో ఉంచడానికి భారీ రాయితీని (Subsidy) అందిస్తుంది. ఒక సీజన్‌లో పంట సరిగా పండకపోయినా, రైతు శాశ్వత అప్పుల ఊబిలో కూరుకుపోకుండా చూడటమే దీని ప్రధాన లక్ష్యం.</p>
+    </section>
+
+    <section>
+        <h2>ప్రయోజనాలు & ఉపయోగాలు</h2>
+        <div class="grid-container">
+            <div class="feature-item">
+                <i class="fas fa-umbrella"></i>
+                <strong>ఆదాయ స్థిరత్వం:</strong>
+                పంట విఫలమైనా తదుపరి సీజన్‌కు విత్తనాలు కొనుగోలు చేయడానికి రైతుల వద్ద డబ్బు ఉండేలా ఇది ఒక భద్రతా వలయంగా పనిచేస్తుంది.
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-hand-holding-usd"></i>
+                <strong>రుణ సదుపాయం:</strong>
+                బీమా చేయబడిన పంటలు ఒక గ్యారెంటీగా పనిచేస్తాయి, దీనివల్ల రైతులకు బ్యాంకు రుణాలు పొందడం సులభం అవుతుంది.
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-seedling"></i>
+                <strong>సాంకేతికత వినియోగం:</strong>
+                బీమా రిస్క్‌ను తగ్గిస్తుంది కాబట్టి, రైతులు అధిక దిగుబడినిచ్చే (కొంచెం ఖరీదైనవి అయినా) విత్తనాలు మరియు కొత్త సాంకేతికతను ధైర్యంగా వాడగలరు.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-thumbs-up"></i> ప్రయోజనాలు</h3>
+                <ul>
+                    <li><strong>తక్కువ ప్రీమియం:</strong> ప్రభుత్వ రాయితీల కారణంగా, రైతులు అసలు ఖర్చులో చాలా తక్కువ శాతం (1.5% - 5%) మాత్రమే చెల్లిస్తారు.</li>
+                    <li><strong>ప్రాంత ఆధారిత క్లెయిమ్‌లు:</strong> ఒక గ్రామం మొత్తం ప్రభావితమైతే, వాతావరణ డేటా ఆధారంగా క్లెయిమ్ చెల్లింపు ప్రక్రియ స్వయంచాలకంగా జరుగుతుంది.</li>
+                    <li><strong>వలసల నివారణ:</strong> పంట నష్టం వల్ల రైతులు అప్పులపాలై నగరాలకు వలస వెళ్లకుండా వారి భూమిలోనే ఉండి వ్యవసాయం చేసుకునేలా సహాయపడుతుంది.</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-thumbs-down"></i> సవాళ్లు / లోపాలు</h3>
+                <ul>
+                    <li><strong>అంచనాలో జాప్యం:</strong> పొలాల్లో పంట కోత ప్రయోగాలు (Crop Cutting Experiments) చేయడానికి సమయం పట్టవచ్చు, దీనివల్ల క్లెయిమ్ డబ్బులు అందడం ఆలస్యమవుతుంది.</li>
+                    <li><strong>పరిమిత పరిధి:</strong> తప్పుడు వ్యవసాయ నిర్ణయాలు, దొంగతనం లేదా రైతు అజాగ్రత్త వల్ల జరిగే అగ్ని ప్రమాదాల నష్టాలను ఇది కవర్ చేయదు.</li>
+                    <li><strong>కనీస ప్రాంత నిబంధన:</strong> కొన్నిసార్లు ఒక నిర్దిష్ట ప్రాంతంలో పెద్ద శాతం పంట దెబ్బతింటేనే క్లెయిమ్‌లు చెల్లించబడతాయి.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>అగ్రి-షీల్డ్ మాస్టరీ క్విజ్</h2>
+        <form id="agriQuiz">
+            <p><b>1. రైతు సరైన నీటి పారుదల సౌకర్యాలు కల్పించకపోవడం వల్ల కలిగే పంట నష్టాన్ని బీమా కవర్ చేస్తుందా?</b></p>
+            <label><input type="radio" name="aq1" value="wrong"> అవును, ఇది అన్ని రకాల పంట విఫలాలను కవర్ చేస్తుంది.</label><br>
+            <label><input type="radio" name="aq1" value="correct"> లేదు, ఇది కేవలం అనివార్యమైన ప్రకృతి వైపరీత్యాలను మాత్రమే కవర్ చేస్తుంది.</label>
+
+            <p><b>2. బ్యాంకు రుణాలు తీసుకోవడంలో పంట బీమా ఎలా సహాయపడుతుంది?</b></p>
+            <label><input type="radio" name="aq2" value="correct"> పంట విఫలమైనా రైతు అప్పు తిరిగి చెల్లించగలడనే నమ్మకాన్ని బ్యాంకుకు ఇస్తుంది.</label><br>
+            <label><input type="radio" name="aq2" value="wrong"> బ్యాంకు ఎప్పటికీ వడ్డీ వసూలు చేయదని ఇది గ్యారెంటీ ఇస్తుంది.</label>
+
+            <p style="margin-top:20px;"><b>సర్టిఫికేట్ కోసం మీ పేరు నమోదు చేయండి:</b></p>
+            <input type="text" id="agriUserName" placeholder="పూర్తి పేరు" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:6px;">
+            
+            <button type="button" class="btn-submit" onclick="validateAgriQuiz()">సమర్పించి సర్టిఫికేట్ పొందండి</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateAgriQuiz() {
+        const name = document.getElementById('agriUserName').value;
+        if(!name) { alert("ముందుగా మీ పేరును నమోదు చేయండి!"); return; }
+
+        let score = 0;
+        const formData = new FormData(document.getElementById('agriQuiz'));
+        for(let entry of formData.values()) { if(entry === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("అద్భుతం! మీరు 100% స్కోర్ చేశారు. మీ సర్టిఫికేట్ సిద్ధంగా ఉంది!");
+            window.location.href = "certificate.html";
+        } else {
+            alert("సర్టిఫికేట్ పొందడానికి అన్ని ప్రశ్నలకు సరైన సమాధానం ఇవ్వాలి. సమాచారాన్ని మళ్ళీ చదివి ప్రయత్నించండి!");
+        }
+    }
+</script>
+
+</body>
+</html>

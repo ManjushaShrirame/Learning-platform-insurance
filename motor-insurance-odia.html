@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ମୋଟର ବୀମା - ଯାନ ସୁରକ୍ଷା ମାଷ୍ଟରକ୍ଲାସ୍</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --motor-blue: #2563eb;
+            --motor-light: #eff6ff;
+            --navy: #0f172a;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--motor-blue);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--motor-blue); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--motor-blue); margin-top: 40px; border-bottom: 2px solid var(--motor-light); padding-bottom: 5px; }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .benefit-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .benefit-item:hover { transform: translateY(-5px); border-color: var(--motor-blue); }
+
+        .benefit-item i { color: var(--motor-blue); font-size: 1.8rem; margin-bottom: 15px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #2563eb; background: #eff6ff; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #64748b; background: #f1f5f9; padding: 25px; border-radius: 12px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #0f172a;
+            color: white;
+            border-radius: 12px;
+        }
+
+        .quiz-box h2 { color: var(--motor-blue); border-color: #334155; }
+
+        .btn-submit {
+            background: var(--motor-blue);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) { .pro-con-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--motor-blue); font-weight:bold;">← ଲର୍ନିଂ ହବ୍‌କୁ ଫେରିଯାଆନ୍ତୁ</a>
+        <h1>ମୋଟର ବୀମା (Motor Insurance)</h1>
+        <p>ଆପଣଙ୍କ କାର୍, ବାଇକ୍ ଏବଂ ବ୍ୟବସାୟିକ ଯାନ ପାଇଁ ସମ୍ପୂର୍ଣ୍ଣ ଆର୍ଥିକ ସୁରକ୍ଷା।</p>
+    </div>
+
+    <section>
+        <h2>ମୋଟର ବୀମା କ’ଣ?</h2>
+        <p>ମୋଟର ବୀମା ହେଉଛି ଜଣେ ଯାନ ମାଲିକ ଏବଂ ବୀମା କମ୍ପାନୀ ମଧ୍ୟରେ ଏକ ଆଇନଗତ ଚୁକ୍ତି। ଏହା ଦୁର୍ଘଟଣା, ଚୋରି କିମ୍ବା ଆପଣଙ୍କ ଯାନର କ୍ଷତିରୁ ସୃଷ୍ଟି ହେଉଥିବା <b>ଆର୍ଥିକ ଦାୟିତ୍ୱ</b> ରୁ ଆପଣଙ୍କୁ ରକ୍ଷା କରିଥାଏ। ଅନେକ ଦେଶରେ, ସାଧାରଣ ରାସ୍ତାରେ ଗାଡ଼ି ଚଲାଇବା ପାଇଁ ଅତିକମରେ "ଥର୍ଡ-ପାର୍ଟି" ବୀମା ରହିବା ଏକ ବାଧ୍ୟତାମୂଳକ ଆଇନଗତ ଆବଶ୍ୟକତା।</p>
+    </section>
+
+    <section>
+        <h2>ମୁଖ୍ୟ ଲାଭ ଏବଂ ବ୍ୟବହାର</h2>
+        <div class="benefit-grid">
+            <div class="benefit-item">
+                <i class="fas fa-car-crash"></i>
+                <strong>ଦୁର୍ଘଟଣା କଭରେଜ୍:</strong>
+                ଧକ୍କା କିମ୍ବା ଦୁର୍ଘଟଣା ପରେ ଆପଣଙ୍କ ଯାନର ମରାମତି ଖର୍ଚ୍ଚ ଏହା ବହନ କରେ।
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-user-shield"></i>
+                <strong>ଥର୍ଡ-ପାର୍ଟି ଲାୟବିଲିଟି:</strong>
+                ଯଦି ଆପଣଙ୍କ ଗାଡ଼ି ଦ୍ୱାରା ଅନ୍ୟ କୌଣସି ବ୍ୟକ୍ତି କିମ୍ବା ତାଙ୍କ ସମ୍ପତ୍ତିର କ୍ଷତି ହୁଏ, ତେବେ ଏହା ଆପଣଙ୍କୁ ଆଇନଗତ ଏବଂ ଆର୍ଥିକ ସୁରକ୍ଷା ଦିଏ।
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-mask"></i>
+                <strong>ଚୋରିରୁ ସୁରକ୍ଷା:</strong>
+                ଯଦି ଆପଣଙ୍କ ଗାଡ଼ି ଚୋରି ହୋଇଯାଏ, ତେବେ ଏହା ଗାଡ଼ିର ବଜାର ମୂଲ୍ୟ (IDV) ପ୍ରଦାନ କରେ।
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <strong>ପ୍ରାକୃତିକ ବିପର୍ଯ୍ୟୟ:</strong>
+                ବନ୍ୟା, ଭୂମିକମ୍ପ, ନିଆଁ କିମ୍ବା ବାତ୍ୟା ଯୋଗୁଁ ହୋଇଥିବା କ୍ଷତିର ମରାମତି ପାଇଁ ସହାୟତା ମିଳେ।
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-check-circle"></i> ସୁବିଧା (Advantages)</h3>
+                <ul>
+                    <li><strong>ଆଇନଗତ ସୁରକ୍ଷା:</strong> ଟ୍ରାଫିକ୍ ଜରିମାନା ଏବଂ ଲାଇସେନ୍ସ ରଦ୍ଦ ହେବାରୁ ରକ୍ଷା ପାଆନ୍ତୁ।</li>
+                    <li><strong>ନୋ କ୍ଲେମ୍ ବୋନସ୍ (NCB):</strong> କୌଣସି କ୍ଲେମ୍ କରିନଥିବା ବର୍ଷ ପାଇଁ ପ୍ରିମିୟମରେ ଭାରି ରିହାତି ପାଆନ୍ତୁ।</li>
+                    <li><strong>କ୍ୟାଶଲେସ୍ ମରାମତି:</strong> ନିଜ ପକେଟରୁ ଟଙ୍କା ନଦେଇ ପାର୍ଟନର ଗ୍ୟାରେଜରେ ମରାମତି ସୁବିଧା।</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-exclamation-circle"></i> ଅସୁବିଧା (Disadvantages)</h3>
+                <ul>
+                    <li><strong>ମୂଲ୍ୟ ହ୍ରାସ (Depreciation):</strong> ପୁରୁଣା ପାର୍ଟସ୍ ବଦଳରେ ନୂଆ ପାର୍ଟସ୍‌ର ସମ୍ପୂର୍ଣ୍ଣ ଖର୍ଚ୍ଚ ସବୁ ପଲିସିରେ ମିଳେ ନାହିଁ।</li>
+                    <li><strong>ବହିଷ୍କୃତ ବ୍ୟବସ୍ଥା:</strong> ମଦ୍ୟପାନ କରି କିମ୍ବା ବିନା ଲାଇସେନ୍ସରେ ଗାଡ଼ି ଚଲାଇଲେ କୌଣସି କ୍ଲେମ୍ ମିଳିବ ନାହିଁ।</li>
+                    <li><strong>ପ୍ରିମିୟମ ଖର୍ଚ୍ଚ:</strong> ଦାମୀ ଗାଡ଼ି କିମ୍ବା ନୂଆ ଡ୍ରାଇଭରଙ୍କ ପାଇଁ ପ୍ରିମିୟମ ଅଧିକ ହୋଇପାରେ।</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>ମୋଟର ସୁରକ୍ଷା ପ୍ରଶ୍ନୋତ୍ତର</h2>
+        <form id="motorQuiz">
+            <p><b>୧. ରାସ୍ତାରେ ଗାଡ଼ି ଚଲାଇବା ପାଇଁ ଆଇନ ଅନୁଯାୟୀ କେଉଁ ବୀମା ବାଧ୍ୟତାମୂଳକ?</b></p>
+            <label><input type="radio" name="mq1" value="correct"> ଥର୍ଡ-ପାର୍ଟି ଲାୟବିଲିଟି ବୀମା</label><br>
+            <label><input type="radio" name="mq1" value="wrong"> ବ୍ୟକ୍ତିଗତ ଜୀବନ ବୀମା</label>
+
+            <p><b>୨. ମୋଟର ବୀମାରେ 'ନୋ କ୍ଲେମ୍ ବୋନସ୍' (NCB) କ’ଣ?</b></p>
+            <label><input type="radio" name="mq2" value="wrong"> ଅଧିକ କ୍ଲେମ୍ କଲେ ଲାଗୁଥିବା ଜରିମାନା।</label><br>
+            <label><input type="radio" name="mq2" value="correct"> ପଲିସି ବର୍ଷରେ କୌଣସି କ୍ଲେମ୍ କରିନଥିଲେ ମିଳୁଥିବା ପ୍ରିମିୟମ ରିହାତି।</label>
+
+            <p style="margin-top:20px;"><b>ଡ୍ରାଇଭରଙ୍କ ନାମ:</b></p>
+            <input type="text" id="driverName" placeholder="ଆପଣଙ୍କ ସମ୍ପୂର୍ଣ୍ଣ ନାମ ଲେଖନ୍ତୁ" style="width:100%; padding:12px; margin-bottom:10px; border-radius:6px; border:none; color: #000;">
+            
+            <button type="button" class="btn-submit" onclick="validateMotorQuiz()">ଆପଣଙ୍କ ଯାନ ମାଷ୍ଟର ସାର୍ଟିଫିକେଟ୍ ପାଆନ୍ତୁ</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateMotorQuiz() {
+        const name = document.getElementById('driverName').value;
+        if(!name) { alert("ଦୟାକରି ଆପଣଙ୍କ ନାମ ଲେଖନ୍ତୁ!"); return; }
+
+        let score = 0;
+        const q1 = document.querySelector('input[name="mq1"]:checked')?.value;
+        const q2 = document.querySelector('input[name="mq2"]:checked')?.value;
+
+        if(q1 === "correct") score++;
+        if(q2 === "correct") score++;
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("ଅଭିନନ୍ଦନ! ଆପଣ ମୋଟର ବୀମାର ମୌଳିକ ଜ୍ଞାନ ହାସଲ କରିଛନ୍ତି।");
+            window.location.href = "certificate.html"; 
+        } else {
+            alert("କ୍ଷମା କରିବେ! ଦୟାକରି ଉପରୋକ୍ତ ସୂଚନା ପୁଣି ପଢ଼ନ୍ତୁ ଏବଂ କୁଇଜ୍ ସମାଧାନ କରନ୍ତୁ।");
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>यात्रा बीमा - ग्लोबल कवर मास्टरक्लास</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --travel-blue: #0ea5e9;
+            --travel-light: #f0f9ff;
+            --navy: #0f172a;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--travel-blue);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--travel-blue); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--travel-blue); margin-top: 40px; border-bottom: 2px solid var(--travel-light); padding-bottom: 5px; }
+
+        .info-card {
+            padding: 25px;
+            border-radius: 12px;
+            background: var(--travel-light);
+            margin-bottom: 30px;
+            border: 1px solid #bae6fd;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .benefit-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .benefit-item:hover { transform: translateY(-5px); border-color: var(--travel-blue); }
+
+        .benefit-item i { color: var(--travel-blue); font-size: 1.8rem; margin-bottom: 15px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #0ea5e9; background: #f0f9ff; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #64748b; background: #f1f5f9; padding: 25px; border-radius: 12px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #0f172a;
+            color: white;
+            border-radius: 12px;
+        }
+
+        .quiz-box h2 { color: var(--travel-blue); border-color: #334155; }
+
+        .btn-submit {
+            background: var(--travel-blue);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) { .pro-con-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--travel-blue); font-weight:bold;">← लर्निंग हब पर वापस जाएं</a>
+        <h1>यात्रा बीमा (Travel Insurance)</h1>
+        <p>वैश्विक रोमांच और व्यावसायिक यात्राओं के लिए आपका सुरक्षा जाल।</p>
+    </div>
+
+    <section>
+        <h2>यात्रा बीमा क्या है?</h2>
+        <p>यात्रा बीमा एक प्रकार का बीमा है जो यात्रा से जुड़े खर्चों और नुकसान को कवर करता है। देश के भीतर या विदेश यात्रा करने वालों के लिए यह एक आवश्यक सुरक्षा है। यह <b>अचानक होने वाली घटनाओं</b> जैसे कि यात्रा रद्द होना, मेडिकल इमरजेंसी, सामान गुम हो जाना और उड़ान में देरी के खिलाफ एक वित्तीय ढाल के रूप में कार्य करता है।</p>
+    </section>
+
+    <section>
+        <h2>मुख्य लाभ और उपयोग</h2>
+        <div class="benefit-grid">
+            <div class="benefit-item">
+                <i class="fas fa-briefcase-medical"></i>
+                <strong>मेडिकल इमरजेंसी:</strong>
+                विदेश में अचानक बीमारी या चोट के खर्च को कवर करता है, जो विदेशी अस्पतालों में लाखों रुपये तक हो सकता है।
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-plane-slash"></i>
+                <strong>यात्रा रद्दीकरण (Cancellation):</strong>
+                यदि आपको किसी वैध कारण (जैसे परिवार में इमरजेंसी या बीमारी) से यात्रा रद्द करनी पड़ती है, तो यह टिकट के पैसे वापस दिलाता है।
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-suitcase-rolling"></i>
+                <strong>सामान का नुकसान/देरी:</strong>
+                यदि आपके बैग में देरी होती है तो यह आवश्यक सामान खरीदने के लिए पैसे देता है और बैग हमेशा के लिए गुम होने पर मुआवजा प्रदान करता है।
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-clock"></i>
+                <strong>उड़ान में देरी:</strong>
+                यदि आपकी उड़ान में काफी देरी होती है, तो यह भोजन और ठहरने के अतिरिक्त खर्चों को कवर करता है।
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-check-circle"></i> फायदे</h3>
+                <ul>
+                    <li><strong>वैश्विक सहायता:</strong> दुनिया में कहीं भी आपात स्थिति के लिए 24/7 सहायता उपलब्ध।</li>
+                    <li><strong>अनिवार्य आवश्यकता:</strong> कई देशों (जैसे शेंगेन क्षेत्र) के वीजा अनुमोदन के लिए यह अनिवार्य है।</li>
+                    <li><strong>कानूनी दायित्व:</strong> यदि आप यात्रा के दौरान गलती से किसी को चोट पहुँचाते हैं या संपत्ति को नुकसान पहुँचाते हैं, तो यह उसे कवर करता है।</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-exclamation-circle"></i> नुकसान/सीमाएं</h3>
+                <ul>
+                    <li><strong>पुरानी बीमारियाँ:</strong> पॉलिसी खरीदने से पहले की बीमारियों (Pre-existing conditions) को अक्सर कवर नहीं किया जाता।</li>
+                    <li><strong>अपवाद:</strong> एडवेंचर स्पोर्ट्स (जैसे स्काइडाइविंग) के लिए अक्सर अलग से 'राइडर' या अतिरिक्त शुल्क देना पड़ता है।</li>
+                    <li><strong>दस्तावेजीकरण:</strong> दावा (Claim) करने के लिए बहुत अधिक कागजी कार्रवाई (जैसे पुलिस रिपोर्ट या मेडिकल रिपोर्ट) की आवश्यकता होती है।</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>ग्लोबल ट्रैवलर क्विज़</h2>
+        <form id="travelQuiz">
+            <p><b>1. यदि आपकी उड़ान 12 घंटे लेट है, तो कौन सा लाभ आपके होटल के खर्च को कवर करेगा?</b></p>
+            <label><input type="radio" name="tq1" value="correct"> ट्रिप डिले (Trip Delay) / मिस्ड कनेक्शन</label><br>
+            <label><input type="radio" name="tq1" value="wrong"> जीवन बीमा (Life Insurance)</label>
+
+            <p><b>2. क्या सामान्य यात्रा बीमा में स्काइडाइविंग जैसे साहसिक खेल शामिल होते हैं?</b></p>
+            <label><input type="radio" name="tq2" value="wrong"> हाँ, इसमें सब कुछ शामिल है।</label><br>
+            <label><input type="radio" name="tq2" value="correct"> नहीं, इसके लिए आमतौर पर विशेष 'एड-ऑन' या राइडर की जरूरत होती है।</label>
+
+            <p style="margin-top:20px;"><b>यात्री का नाम:</b></p>
+            <input type="text" id="travelerName" placeholder="अपना पूरा नाम दर्ज करें" style="width:100%; padding:12px; margin-bottom:10px; border-radius:6px; border:none; color:black;">
+            
+            <button type="button" class="btn-submit" onclick="validateTravelQuiz()">सर्टिफिकेट प्राप्त करें</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateTravelQuiz() {
+        const name = document.getElementById('travelerName').value;
+        if(!name) { alert("कृपया अपना नाम दर्ज करें!"); return; }
+
+        let score = 0;
+        const formData = new FormData(document.getElementById('travelQuiz'));
+        for(let entry of formData.values()) { if(entry === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("आपकी यात्रा मंगलमय हो! आपने ग्लोबल कवर मास्टरक्लास पास कर ली है।");
+            window.location.href = "certificate.html";
+        } else {
+            alert("ओह! कृपया ऊपर दी गई जानकारी को फिर से पढ़ें और सर्टिफिकेट के लिए दोबारा प्रयास करें।");
+        }
+    }
+</script>
+
+</body>
+</html>

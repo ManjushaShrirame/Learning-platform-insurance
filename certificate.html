@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certificate of Completion</title>
+<link rel="stylesheet" href="certificate.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<style>
+  /* This ensures the certificate looks correct on screen and matches PDF proportions */
+  #certificate {
+    width: 1000px; /* Fixed width for consistent scaling */
+    height: 700px; /* Fixed height to fit A4 aspect ratio */
+    padding: 40px;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    box-sizing: border-box;
+    border: 10px double #f0c94b; /* Optional: adds a professional border */
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="certificate" id="certificate">
+    <img src="logo.jpeg" class="logo" alt="Logo" style="max-height: 180px;">
+    
+    <div style="text-align: center; margin-top: 40px;">
+        <h1>Certificate of Completion</h1>
+        <p style="font-size: 20px;">This is to certify that</p>
+        
+        <h2 id="name" style="font-size: 48px; color: #01040a; margin: 20px 0; border-bottom: 2px solid #eee; display: inline-block; min-width: 400px;"></h2>
+      
+        <p style="font-size: 20px;">has successfully completed the course</p>
+        <h3 style="font-size: 28px;"> Insurance </h3>
+    </div>
+
+    <div class="footer">
+      <div class="sign-box" style="text-align: center;">
+        <img src="image.png" class="sign" alt="Signature" style="max-height: 60px; display: block; margin: 0 auto;">
+        <div style="border-top: 1px solid #000; width: 200px; margin-top: 5px;"></div>
+        <p>Authorized Signatory</p>
+      </div>
+      <div class="date-box" style="text-align: center;">
+        <p>Date Issued</p>
+        <strong id="date" style="font-size: 18px;"></strong>
+      </div>
+    </div>
+  </div>
+  
+  <div style="text-align: center;">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Hub</a>
+      <button onclick="downloadPDF()" style="margin-top: 20px; padding: 15px 30px; cursor: pointer; background: #2563eb; color: white; border: none; border-radius: 5px; font-weight: bold;">
+          Download PDF Certificate
+      </button>
+  </div>
+  <div style="text-align: center; margin-top: 30px; margin-bottom: 50px;">
+    <a href="index.html" class="back-btn" style="text-decoration: none; color: #666; margin-right: 20px;">
+        
+    </a>
+    
+    
+    </button>
+
+    <br><br>
+    <a href="https://www.paisabada.in" target="_blank">
+    <button class="vault-btn">
+        <i class="fas fa-coins"></i> Click to Activate 100 Coins Vault
+    </button>
+</a>
+</button>
+</div>
+  
+  <script>
+    // Load Data
+    const savedName = localStorage.getItem("certName") || "Guest Student";
+    const savedDate = localStorage.getItem("certDate") || new Date().toLocaleDateString();
+  
+    document.getElementById("name").innerText = savedName;
+    document.getElementById("date").innerText = savedDate;
+  
+    // Optimized PDF Function
+    function downloadPDF() {
+      const element = document.getElementById("certificate");
+      
+      const opt = {
+        margin: 0, // No margins to prevent overflow
+        filename: 'Life_Insurance_Certificate.pdf',
+        image: { type: 'jpeg', quality: 1.0 },
+        html2canvas: { 
+            scale: 2, 
+            useCORS: true, 
+            logging: false,
+            letterRendering: true 
+        },
+        jsPDF: { 
+            unit: 'mm', 
+            format: 'a4', 
+            orientation: 'landscape' 
+        }
+      };
+
+
+      html2pdf().set(opt).from(element).toPdf().get('pdf').then(function (pdf) {
+        var totalPages = pdf.internal.getNumberOfPages();
+       
+        for (var i = totalPages; i > 1; i--) {
+            pdf.deletePage(i);
+        }
+      }).save();
+    }
+  </script>
+</body>
+</html>

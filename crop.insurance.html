@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Insurance - Agri-Shield Masterclass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --agri-green: #059669;
+            --agri-light: #ecfdf5;
+            --earth-brown: #78350f;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f0fdf4;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--agri-green);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--agri-green); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--agri-green); margin-top: 40px; border-bottom: 2px solid var(--agri-light); padding-bottom: 5px; }
+        h3 { color: var(--earth-brown); margin-top: 0; }
+
+        .info-card {
+            padding: 25px;
+            border-radius: 12px;
+            background: var(--agri-light);
+            margin-bottom: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #d1fae5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .feature-item i { color: var(--agri-green); font-size: 1.5rem; margin-bottom: 10px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #10b981; background: #f0fdf4; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #f59e0b; background: #fffbeb; padding: 25px; border-radius: 12px; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 2px dashed var(--agri-green);
+        }
+
+        .btn-submit {
+            background: var(--agri-green);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { background: #047857; }
+
+        @media (max-width: 600px) {
+            .pro-con-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--agri-green); font-weight:bold;">← Back to Learning Hub</a>
+        <h1>Crop Insurance</h1>
+        <p>Protecting the agricultural foundation from natural uncertainties.</p>
+    </div>
+
+    <section>
+        <h2>What is Crop Insurance?</h2>
+        <p>Crop insurance is a specialized financial product that compensates farmers for financial losses caused by the failure of their crops. This failure can result from natural disasters, such as <b>droughts, floods, hailstorms, or localized risks like landslides</b>, as well as biological risks like <b>pest attacks and diseases</b>.</p>
+        
+        
+        
+        <p>In many regions, governments provide heavy subsidies to make this insurance affordable. Its main goal is to ensure that a single bad harvest doesn't lead a farmer into a cycle of permanent debt.</p>
+    </section>
+
+    <section>
+        <h2>Key Benefits & Uses</h2>
+        <div class="grid-container">
+            <div class="feature-item">
+                <i class="fas fa-umbrella"></i>
+                <strong>Income Stability:</strong>
+                Provides a safety net so farmers have money to buy seeds for the next season even after a crop failure.
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-hand-holding-usd"></i>
+                <strong>Credit Access:</strong>
+                Insured crops act as a form of security, making it easier for farmers to get institutional loans.
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-seedling"></i>
+                <strong>Tech Adoption:</strong>
+                Insurance reduces risk, encouraging farmers to try higher-yielding (but more expensive) seeds and technology.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-thumbs-up"></i> Advantages</h3>
+                <ul>
+                    <li><strong>Low Premium:</strong> Thanks to government subsidies, farmers pay only a tiny fraction (1.5% - 5%) of the actual cost.</li>
+                    <li><strong>Area-Based Claims:</strong> If an entire village is affected, the payout process is often automated based on weather data.</li>
+                    <li><strong>Prevents Migration:</strong> Helps farmers stay on their land rather than moving to cities due to bankruptcy.</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-thumbs-down"></i> Disadvantages</h3>
+                <ul>
+                    <li><strong>Assessment Delays:</strong> Physical inspection of fields (Crop Cutting Experiments) can take a long time, delaying payouts.</li>
+                    <li><strong>Limited Scope:</strong> Does not cover losses due to poor farming decisions, theft, or fire caused by the farmer.</li>
+                    <li><strong>Minimum Area Criteria:</strong> Sometimes claims are only paid if a large percentage of a specific "notified area" is affected.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>Agri-Shield Mastery Quiz</h2>
+        <form id="agriQuiz">
+            <p><b>1. Does crop insurance cover losses caused by a farmer's lack of proper irrigation?</b></p>
+            <label><input type="radio" name="aq1" value="wrong"> Yes, it covers all types of crop failure.</label><br>
+            <label><input type="radio" name="aq1" value="correct"> No, it only covers unavoidable natural calamities.</label>
+
+            <p><b>2. How does crop insurance help in taking bank loans?</b></p>
+            <label><input type="radio" name="aq2" value="correct"> It provides security that the farmer can repay even if crops fail.</label><br>
+            <label><input type="radio" name="aq2" value="wrong"> It guarantees that the bank will never charge interest.</label>
+
+            <p style="margin-top:20px;"><b>Enter Name for your Certificate:</b></p>
+            <input type="text" id="agriUserName" placeholder="Full Name" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:6px;">
+            
+            <button type="button" class="btn-submit" onclick="validateAgriQuiz()">Submit & Generate Certificate</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateAgriQuiz() {
+        const name = document.getElementById('agriUserName').value;
+        if(!name) { alert("Please enter your name first!"); return; }
+
+        let score = 0;
+        const formData = new FormData(document.getElementById('agriQuiz'));
+        for(let entry of formData.values()) { if(entry === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("Excellent! You scored 100%. Your certificate is ready!");
+            window.location.href = "certificate.html";
+        } else {
+            alert("You need a perfect score to earn a certificate. Review the information and try again!");
+        }
+    }
+</script>
+
+</body>
+</html>

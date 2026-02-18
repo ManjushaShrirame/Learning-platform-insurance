@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फसल बीमा - एग्री-शील्ड मास्टरक्लास</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --agri-green: #059669;
+            --agri-light: #ecfdf5;
+            --earth-brown: #78350f;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f0fdf4;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--agri-green);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--agri-green); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--agri-green); margin-top: 40px; border-bottom: 2px solid var(--agri-light); padding-bottom: 5px; }
+        h3 { color: var(--earth-brown); margin-top: 0; }
+
+        .info-card {
+            padding: 25px;
+            border-radius: 12px;
+            background: var(--agri-light);
+            margin-bottom: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #d1fae5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .feature-item i { color: var(--agri-green); font-size: 1.5rem; margin-bottom: 10px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #10b981; background: #f0fdf4; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #f59e0b; background: #fffbeb; padding: 25px; border-radius: 12px; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 2px dashed var(--agri-green);
+        }
+
+        .btn-submit {
+            background: var(--agri-green);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { background: #047857; }
+
+        @media (max-width: 600px) {
+            .pro-con-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--agri-green); font-weight:bold;">← लर्निंग हब पर वापस जाएं</a>
+        <h1>फसल बीमा (Crop Insurance)</h1>
+        <p>प्राकृतिक अनिश्चितताओं से कृषि की नींव की रक्षा करना।</p>
+    </div>
+
+    <section>
+        <h2>फसल बीमा क्या है?</h2>
+        <p>फसल बीमा एक विशेष वित्तीय उत्पाद है जो किसानों को उनकी फसलों की विफलता (Crop Failure) के कारण होने वाले वित्तीय नुकसान की भरपाई करता है। यह विफलता प्राकृतिक आपदाओं, जैसे कि <b>सूखा, बाढ़, ओलावृष्टि, या भूस्खलन</b> के साथ-साथ जैविक खतरों जैसे <b>कीटों के हमले और बीमारियों</b> के कारण हो सकती है।</p>
+        
+        <p>कई क्षेत्रों में, सरकारें इस बीमा को किफायती बनाने के लिए भारी सब्सिडी प्रदान करती हैं। इसका मुख्य लक्ष्य यह सुनिश्चित करना है कि एक खराब फसल किसान को स्थायी कर्ज के जाल में न धकेल दे।</p>
+    </section>
+
+    <section>
+        <h2>मुख्य लाभ और उपयोग</h2>
+        <div class="grid-container">
+            <div class="feature-item">
+                <i class="fas fa-umbrella"></i>
+                <strong>आय में स्थिरता:</strong>
+                यह एक सुरक्षा जाल प्रदान करता है ताकि फसल खराब होने के बाद भी किसानों के पास अगले सीजन के लिए बीज खरीदने के लिए पैसे हों।
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-hand-holding-usd"></i>
+                <strong>ऋण तक पहुंच:</strong>
+                बीमाकृत फसलें एक प्रकार की सुरक्षा के रूप में कार्य करती हैं, जिससे किसानों के लिए संस्थागत ऋण (Bank Loans) प्राप्त करना आसान हो जाता है।
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-seedling"></i>
+                <strong>तकनीक को अपनाना:</strong>
+                बीमा जोखिम को कम करता है, जिससे किसान अधिक उपज देने वाले (लेकिन अधिक महंगे) बीज और नई तकनीक को आजमाने के लिए प्रोत्साहित होते हैं।
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-thumbs-up"></i> फायदे</h3>
+                <ul>
+                    <li><strong>कम प्रीमियम:</strong> सरकारी सब्सिडी के कारण, किसानों को वास्तविक लागत का केवल एक छोटा हिस्सा (1.5% - 5%) देना पड़ता है।</li>
+                    <li><strong>क्षेत्र-आधारित दावे:</strong> यदि पूरा गांव प्रभावित होता है, तो मौसम के आंकड़ों के आधार पर भुगतान की प्रक्रिया अक्सर स्वचालित होती है।</li>
+                    <li><strong>पलायन को रोकना:</strong> यह किसानों को कर्ज के कारण शहरों की ओर पलायन करने के बजाय अपनी जमीन पर टिके रहने में मदद करता है।</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-thumbs-down"></i> नुकसान/चुनौतियां</h3>
+                <ul>
+                    <li><strong>मूल्यांकन में देरी:</strong> खेतों के भौतिक निरीक्षण (फसल कटाई प्रयोग) में लंबा समय लग सकता है, जिससे भुगतान में देरी होती है।</li>
+                    <li><strong>सीमित दायरा:</strong> खेती के गलत निर्णयों, चोरी, या किसान की गलती से लगी आग के कारण हुए नुकसान को कवर नहीं करता है।</li>
+                    <li><strong>न्यूनतम क्षेत्र मानदंड:</strong> कभी-कभी दावों का भुगतान तभी किया जाता है जब किसी विशिष्ट "अधिसूचित क्षेत्र" का एक बड़ा प्रतिशत प्रभावित हो।</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>एग्री-शील्ड महारत प्रश्नोत्तरी</h2>
+        <form id="agriQuiz">
+            <p><b>1. क्या फसल बीमा किसान की सिंचाई व्यवस्था की कमी के कारण हुए नुकसान को कवर करता है?</b></p>
+            <label><input type="radio" name="aq1" value="wrong"> हाँ, यह सभी प्रकार की फसल विफलता को कवर करता है।</label><br>
+            <label><input type="radio" name="aq1" value="correct"> नहीं, यह केवल अपरिहार्य प्राकृतिक आपदाओं को कवर करता है।</label>
+
+            <p><b>2. फसल बीमा बैंक ऋण लेने में कैसे मदद करता है?</b></p>
+            <label><input type="radio" name="aq2" value="correct"> यह गारंटी देता है कि फसल खराब होने पर भी किसान कर्ज चुका सकेगा।</label><br>
+            <label><input type="radio" name="aq2" value="wrong"> यह गारंटी देता है कि बैंक कभी ब्याज नहीं लेगा।</label>
+
+            <p style="margin-top:20px;"><b>सर्टिफिकेट के लिए अपना नाम दर्ज करें:</b></p>
+            <input type="text" id="agriUserName" placeholder="पूरा नाम" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:6px;">
+            
+            <button type="button" class="btn-submit" onclick="validateAgriQuiz()">सबमिट करें और सर्टिफिकेट प्राप्त करें</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateAgriQuiz() {
+        const name = document.getElementById('agriUserName').value;
+        if(!name) { alert("कृपया पहले अपना नाम दर्ज करें!"); return; }
+
+        let score = 0;
+        const formData = new FormData(document.getElementById('agriQuiz'));
+        for(let entry of formData.values()) { if(entry === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("बहुत बढ़िया! आपने 100% स्कोर किया है। आपका सर्टिफिकेट तैयार है!");
+            window.location.href = "certificate.html";
+        } else {
+            alert("सर्टिफिकेट पाने के लिए आपको सभी प्रश्नों के सही उत्तर देने होंगे। जानकारी को फिर से पढ़ें और प्रयास करें!");
+        }
+    }
+</script>
+
+</body>
+</html>

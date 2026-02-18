@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मोटर विमा - वाहन सुरक्षा मास्टरक्लास</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --motor-blue: #2563eb;
+            --motor-light: #eff6ff;
+            --navy: #0f172a;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--motor-blue);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--motor-blue); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--motor-blue); margin-top: 40px; border-bottom: 2px solid var(--motor-light); padding-bottom: 5px; }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .benefit-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .benefit-item:hover { transform: translateY(-5px); border-color: var(--motor-blue); }
+
+        .benefit-item i { color: var(--motor-blue); font-size: 1.8rem; margin-bottom: 15px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #2563eb; background: #eff6ff; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #64748b; background: #f1f5f9; padding: 25px; border-radius: 12px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #0f172a;
+            color: white;
+            border-radius: 12px;
+        }
+
+        .quiz-box h2 { color: var(--motor-blue); border-color: #334155; }
+
+        .btn-submit {
+            background: var(--motor-blue);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) { .pro-con-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--motor-blue); font-weight:bold;">← लर्निंग हबवर परत जा</a>
+        <h1>मोटर विमा (Motor Insurance)</h1>
+        <p>तुमच्या कार, बाईक आणि व्यावसायिक वाहनांसाठी सर्वसमावेशक आर्थिक सुरक्षा.</p>
+    </div>
+
+    <section>
+        <h2>मोटर विमा म्हणजे काय?</h2>
+        <p>मोटर विमा हा वाहन मालक आणि विमा कंपनी यांच्यातील एक कायदेशीर करार आहे. हा विमा तुम्हाला अपघात, चोरी किंवा तुमच्या वाहनाचे होणारे नुकसान यामुळे उद्भवणाऱ्या <b>आर्थिक दायित्वापासून</b> वाचवतो. अनेक देशांमध्ये, सार्वजनिक रस्त्यांवर वाहन चालवण्यासाठी किमान "थर्ड-पार्टी" (तृतीय पक्ष) विमा असणे ही एक अनिवार्य कायदेशीर अट आहे.</p>
+    </section>
+
+    <section>
+        <h2>मुख्य फायदे आणि उपयोग</h2>
+        <div class="benefit-grid">
+            <div class="benefit-item">
+                <i class="fas fa-car-crash"></i>
+                <strong>अपघात कव्हरेज:</strong>
+                टक्कर किंवा अपघातानंतर तुमच्या वाहनाच्या दुरुस्तीचा खर्च कव्हर केला जातो.
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-user-shield"></i>
+                <strong>थर्ड-पार्टी लायबिलिटी:</strong>
+                जर तुमच्या वाहनामुळे इतर कोणत्याही व्यक्तीला दुखापत झाली किंवा त्यांच्या मालमत्तेचे नुकसान झाले, तर हे तुम्हाला कायदेशीर आणि आर्थिक संरक्षण देते.
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-mask"></i>
+                <strong>चोरीपासून संरक्षण:</strong>
+                जर तुमचे वाहन चोरीला गेले, तर विमा कंपनी तुम्हाला वाहनाच्या बाजार मूल्याचे (IDV) पैसे देते.
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <strong>नैसर्गिक आपत्ती:</strong>
+                पूर, भूकंप, आग किंवा वादळामुळे होणाऱ्या नुकसानीच्या दुरुस्तीसाठी निधी मिळतो.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-check-circle"></i> फायदे (Advantages)</h3>
+                <ul>
+                    <li><strong>कायदेशीर संरक्षण:</strong> मोठा वाहतूक दंड आणि लायसन्स रद्द होण्यापासून वाचता येते.</li>
+                    <li><strong>नो क्लेम बोनस (NCB):</strong> प्रत्येक अपघातमुक्त वर्षासाठी प्रीमियमवर मोठी सवलत मिळवा.</li>
+                    <li><strong>कॅशलेस दुरुस्ती:</strong> खिशातून पैसे न देता दुरुस्तीसाठी पार्टनर गॅरेजच्या नेटवर्कची सुविधा.</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-exclamation-circle"></i> मर्यादा (Disadvantages)</h3>
+                <ul>
+                    <li><strong>घसारा (Depreciation):</strong> सामान्य पॉलिसी जुन्या भागांच्या बदल्यात नवीन भागांचा पूर्ण खर्च कव्हर करत नाहीत.</li>
+                    <li><strong>वगळलेल्या बाबी:</strong> दारूच्या नशेत किंवा विना परवाना गाडी चालवल्यास सर्व क्लेम (Claims) फेटाळले जातात.</li>
+                    <li><strong>प्रीमियम खर्च:</strong> लक्झरी कार किंवा नवीन ड्रायव्हर्ससाठी प्रीमियम बऱ्याचदा महाग असतो.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>मोटर सुरक्षा प्रश्नमंजुषा</h2>
+        <form id="motorQuiz">
+            <p><b>१. सार्वजनिक रस्त्यांवर गाडी चालवण्यासाठी कायद्याने कोणता विमा अनिवार्य आहे?</b></p>
+            <label><input type="radio" name="mq1" value="correct"> थर्ड-पार्टी लायबिलिटी विमा (Third-party liability)</label><br>
+            <label><input type="radio" name="mq1" value="wrong"> वैयक्तिक अपघाती जीवन विमा</label>
+
+            <p><b>२. मोटर विम्यामध्ये 'नो क्लेम बोनस' (NCB) म्हणजे काय?</b></p>
+            <label><input type="radio" name="mq2" value="wrong"> खूप जास्त क्लेम केल्यावर लागणारा दंड.</label><br>
+            <label><input type="radio" name="mq2" value="correct"> पॉलिसी वर्षात कोणताही क्लेम न केल्यास प्रीमियमवर मिळणारी सवलत.</label>
+
+            <p style="margin-top:20px;"><b>चालकाचे नाव:</b></p>
+            <input type="text" id="driverName" placeholder="तुमचे पूर्ण नाव प्रविष्ट करा" style="width:100%; padding:12px; margin-bottom:10px; border-radius:6px; border:none; color: #000;">
+            
+            <button type="button" class="btn-submit" onclick="validateMotorQuiz()">तुमचे वाहन मास्टर सर्टिफिकेट मिळवा</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateMotorQuiz() {
+        const name = document.getElementById('driverName').value;
+        if(!name) { alert("कृपया तुमचे नाव प्रविष्ट करा!"); return; }
+
+        let score = 0;
+        const q1 = document.querySelector('input[name="mq1"]:checked')?.value;
+        const q2 = document.querySelector('input[name="mq2"]:checked')?.value;
+
+        if(q1 === "correct") score++;
+        if(q2 === "correct") score++;
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("अभिनंदन! तुम्ही मोटर विम्याच्या मूलभूत गोष्टी आत्मसात केल्या आहेत.");
+            window.location.href = "certificate.html"; 
+        } else {
+            alert("अरेरे! कृपया वरील माहिती पुन्हा वाचा आणि प्रश्नमंजुषा पुन्हा सोडवा.");
+        }
+    }
+</script>
+
+</body>
+</html>

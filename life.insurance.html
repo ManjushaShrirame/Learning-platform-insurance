@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insurance Masterclass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --life-primary: #7c3aed; /* Deep Purple */
+            --life-light: #f5f3ff;   /* Soft Lavender */
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f1f5f9;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--life-primary);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--life-primary); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--life-primary); margin-top: 40px; border-bottom: 2px solid var(--life-light); }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            padding: 20px;
+            border-radius: 12px;
+            background: var(--life-light);
+        }
+
+        .adv-box { border-top: 5px solid #22c55e; background: #f0fdf4; }
+        .dis-box { border-top: 5px solid #f97316; background: #fff7ed; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-section {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn-submit {
+            background: var(--life-primary);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: opacity 0.3s;
+        }
+
+        .btn-submit:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--life-primary); font-weight:bold;">← Back to Hub</a>
+        <h1>Life Insurance</h1>
+        <p>Securing your family's future and ensuring financial dignity even in your absence.</p>
+    </div>
+
+    <section>
+        <h2>What is Life Insurance?</h2>
+        <p>Life insurance is a financial contract where you pay a <b>Premium</b> to an insurance company. In return, the company provides a <b>Sum Assured</b> (a large lump sum) to your family if something happens to you. It serves as a financial safety net to replace lost income and cover future goals like child education or debt repayment.</p>
+    </section>
+
+    <section>
+        <h2>Types & Benefits</h2>
+        <div class="info-card">
+            <ul>
+                <li><strong>Term Insurance:</strong> Pure life cover at the lowest possible cost for a fixed period.</li>
+                <li><strong>Whole Life Cover:</strong> Provides protection for your entire life, up to age 99 or 100.</li>
+                <li><strong>Death Benefit:</strong> Tax-free lump sum paid to your nominees/beneficiaries.</li>
+                <li><strong>Loan Protection:</strong> Prevents your family from being burdened by home or personal loans.</li>
+                <li><strong>Wealth Creation:</strong> Options like ULIPs allow you to grow your money while staying covered.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid-info">
+            <div class="info-card adv-box">
+                <h3><i class="fas fa-hand-holding-heart"></i> Advantages</h3>
+                <ul>
+                    <li>Guaranteed financial security for your dependents.</li>
+                    <li>Tax benefits under Section 80C (up to ₹1.5 Lakh).</li>
+                    <li>Low premiums if bought at a young age.</li>
+                    <li>Encourages a habit of disciplined long-term saving.</li>
+                </ul>
+            </div>
+            <div class="info-card dis-box">
+                <h3><i class="fas fa-info-circle"></i> Considerations</h3>
+                <ul>
+                    <li>Inflation can reduce the value of the sum assured over decades.</li>
+                    <li><strong>Lock-in Periods:</strong> Early exit from plans may lead to heavy losses.</li>
+                    <li>Lifestyle habits (smoking/drinking) increase your premium cost.</li>
+                    <li>Pure term insurance has no "maturity" value if you survive.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-section">
+        <h2>Quick Check: Life Insurance IQ</h2>
+        <form id="lifeQuiz">
+            <p><b>1. Which policy offers the highest life cover for the lowest premium?</b></p>
+            <label><input type="radio" name="q1" value="correct"> Term Insurance</label><br>
+            <label><input type="radio" name="q1" value="wrong"> Endowment Plan</label>
+
+            <p><b>2. Under which section can you claim tax benefits for Life Insurance premiums?</b></p>
+            <label><input type="radio" name="q2" value="correct"> Section 80C</label><br>
+            <label><input type="radio" name="q2" value="wrong"> Section 80D</label>
+
+            <p style="margin-top:20px;"><b>Enter Name for Certificate:</b></p>
+            <input type="text" id="userName" placeholder="Your Name" style="width:100%; padding:10px; margin-bottom:20px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <button type="button" class="btn-submit" onclick="checkLifeScore()">Submit & Get Certificate</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function checkLifeScore() {
+        const name = document.getElementById('userName').value;
+        if(!name) { alert("Please enter your name"); return; }
+
+        let score = 0;
+        const answers = new FormData(document.getElementById('lifeQuiz'));
+        for(let v of answers.values()) { if(v === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("Perfect! You're ready to secure a legacy. Redirecting to your Life Certificate...");
+            window.location.href = "certificate.html";
+        } else {
+            alert("Oops! Please review the sections and answer correctly to earn your certificate.");
+        }
+    }
+</script>
+
+</body>
+</html>

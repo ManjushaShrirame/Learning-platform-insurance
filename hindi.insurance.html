@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTech Learning Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Quick Inline Style for the Language Bar */
+        .lang-bar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            transition: 0.3s;
+            font-size: 0.9rem;
+        }
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="content">
+        <header>
+            <h1 id="main-title">Financial Learning Platform</h1>
+            <p id="main-sub">Master your money through interactive modules</p>
+        </header>
+
+        <div class="lang-dropdown-wrapper">
+            <button class="lang-btn-trigger" onclick="toggleLangMenu()">
+                <i class="fas fa-globe"></i> Select Language <i class="fas fa-chevron-down"></i>
+            </button>
+            
+            <div id="langMenu" class="dropdown-content">
+                <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+                <button class="lang-btn" onclick="changeLanguage('hi')">हिंदी</button>
+                <button class="lang-btn" onclick="changeLanguage('mr')">मराठी</button>
+                <button class="lang-btn" onclick="changeLanguage('te')">తెలుగు</button>
+                <button class="lang-btn" onclick="changeLanguage('or')">ଓଡ଼ିଆ</button>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="glass-card life-insurance featured">
+                <div class="brand-tag" style="background: #8b5cf6;" id="tag-life">Wealth + Cover</div>
+                <i class="fas fa-hand-holding-heart icon" style="color: #8b5cf6;"></i>
+                <h2 id="h-life">Life Insurance</h2>
+                <p id="p-life">Beyond term plans: Explore Endowment, ULIPs, and Whole Life coverage.</p>
+                <button id="btn-life" onclick="window.location.href='life.insurance.hindi.html'">Enter </button>
+                
+
+            </div>
+
+            <div class="glass-card term-insurance">
+                <div class="brand-tag" style="background: #10b981;" id="tag-term">Best Value</div>
+                <i class="fas fa-shield-alt icon" style="color: #10b981;"></i>
+                <h2 id="h-term">Term Insurance</h2>
+                <p id="p-term">High coverage at low premiums to secure your family's financial future.</p>
+                <button id="btn-term" onclick="window.location.href='term-insurance-info.html'">Enter Vault</button>
+            </div>
+        
+            <div class="glass-card health-insurance">
+                <div class="brand-tag" style="background: #ef4444;" id="tag-health">Medical Security</div>
+                <i class="fas fa-heartbeat icon" style="color: #ef4444;"></i>
+                <h2 id="h-health">Health Insurance</h2>
+                <p id="p-health">Cover hospital bills, critical illnesses, and protect your savings.</p>
+                <button id="btn-health" onclick="window.location.href='health.insurance.html'">Check Cover</button>
+            </div>
+
+            <div class="glass-card crop-insurance">
+                <div class="brand-tag" style="background: #059669;" id="tag-crop">Agri-Shield</div>
+                <i class="fas fa-seedling icon" style="color: #10b981;"></i>
+                <h2 id="h-crop">Crop Insurance</h2>
+                <p id="p-crop">Protect against yield loss due to weather, pests, or natural calamities.</p>
+                <button id="btn-crop" onclick="window.location.href='crop.insurance.html'">Secure Harvest</button>
+            </div>
+
+            <div class="glass-card travel-insurance">
+                <div class="brand-tag" style="background: #0ea5e9;" id="tag-travel">Global Cover</div>
+                <i class="fas fa-plane-departure icon" style="color: #38bdf8;"></i>
+                <h2 id="h-travel">Travel Insurance</h2>
+                <p id="p-travel">Coverage for medical emergencies, trip cancellations, and lost baggage.</p>
+                <button id="btn-travel" onclick="window.location.href='travl.insurance.html'">Plan Trip</button>
+            </div>
+        
+            <div class="glass-card investment">
+                <i class="fas fa-chart-area icon" style="color: #3b82f6;"></i>
+                <h2 id="h-invest">Investment</h2>
+                <p id="p-invest">Learn asset allocation and wealth building strategies.</p>
+                <button id="btn-invest">Grow Wealth</button>
+            </div>
+        
+            <div class="glass-card policybazaar">
+                <div class="brand-tag" id="tag-pb">Marketplace</div>
+                <i class="fas fa-balance-scale icon" style="color: #64748b;"></i>
+                <h2 id="h-pb">PolicyBazaar</h2>
+                <p id="p-pb">Compare premium plans and analyze coverage accurately.</p>
+                <button id="btn-pb">Compare Now</button>
+            </div>
+        
+            <div class="glass-card mutual-funds">
+                <i class="fas fa-layer-group icon" style="color: #f59e0b;"></i>
+                <h2 id="h-mf">Mutual Funds</h2>
+                <p id="p-mf">Understand SIPs and building diversified portfolios.</p>
+                <button id="btn-mf" onclick="window.location.href='mutualfund.html'">Analyze SIP</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

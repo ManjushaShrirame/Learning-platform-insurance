@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>टर्म इन्शुरन्स - फायनान्शिअल सुरक्षा मास्टरक्लास</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --term-primary: #0c523a; /* गडद हिरवा रंग */
+            --term-light: #f0fdf4;
+            --gold-accent: #b45309;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--term-primary);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--term-primary); font-size: 2.2rem; margin: 0; }
+        h2 { color: var(--term-primary); margin-top: 40px; border-bottom: 2px solid var(--term-light); padding-bottom: 5px; }
+        h3 { color: var(--gold-accent); margin-top: 0; }
+
+        .info-card {
+            padding: 25px;
+            border-radius: 12px;
+            background: var(--term-light);
+            margin-bottom: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #d1fae5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            text-align: center;
+        }
+
+        .feature-item i { color: var(--term-primary); font-size: 1.8rem; margin-bottom: 10px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #10b981; background: #f0fdf4; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #f59e0b; background: #fffbeb; padding: 25px; border-radius: 12px; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 2px dashed var(--term-primary);
+        }
+
+        .btn-submit {
+            background: var(--term-primary);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { background: #083d2b; }
+
+        @media (max-width: 600px) {
+            .pro-con-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--term-primary); font-weight:bold;">← लर्निंग हबवर परत जा</a>
+        <h1>टर्म इन्शुरन्स (Term Insurance)</h1>
+        <p>तुमच्या कुटुंबाच्या भविष्यासाठी जीवन सुरक्षेचे सर्वात शुद्ध स्वरूप.</p>
+    </div>
+
+    <section>
+        <h2>टर्म इन्शुरन्स म्हणजे काय?</h2>
+        <p>टर्म इन्शुरन्स हा जीवन विम्याचा एक साधा प्रकार आहे जो तुमच्या कुटुंबाला <b>विमा रक्कम (Sum Assured)</b> प्रदान करतो, जर विमा उतरवलेल्या व्यक्तीचा पॉलिसी कालावधी दरम्यान मृत्यू झाला तर. हे तुमच्या उत्पन्नाची कमतरता भरून काढण्यासाठी आणि कर्ज (Loans) फेडण्यासाठी डिझाइन केलेले आहे.</p>
+        
+        <p>इतर योजनांच्या उलट, टर्म इन्शुरन्स हे <b>शुद्ध संरक्षण (Pure Protection)</b> आहे. याचा अर्थ असा की संपूर्ण प्रीमियम केवळ लाइफ कव्हरसाठी वापरला जातो, ज्यामुळे गुंतवणूक योजनांच्या तुलनेत खूप कमी खर्चात खूप मोठे विमा कवच मिळते.</p>
+    </section>
+
+    <section>
+        <h2>मुख्य फायदे (Core Benefits)</h2>
+        <div class="grid-container">
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <strong>मोठा कव्हर:</strong>
+                कमी प्रीमियममध्ये तुमच्या वार्षिक उत्पन्नाच्या १०० पटीपर्यंत लाइफ कव्हर मिळवा.
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-percentage"></i>
+                <strong>कराची बचत:</strong>
+                कलम 80C अंतर्गत प्रीमियमवर कर सवलतीचा (₹१.५ लाखांपर्यंत) लाभ घ्या.
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-hand-holding-heart"></i>
+                <strong>मानसिक शांतता:</strong>
+                तुमच्या अनुपस्थितीतही होम लोन आणि मुलांचे शिक्षण पूर्ण होईल याची खात्री करा.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-thumbs-up"></i> फायदे</h3>
+                <ul>
+                    <li><strong>परवडणारा:</strong> २५ वर्षांची व्यक्ती दरमहा ₹१००० पेक्षा कमी खर्चात ₹१ कोटीचा कव्हर घेऊ शकते.</li>
+                    <li><strong>निश्चित प्रीमियम:</strong> एकदा पॉलिसी घेतली की, तुमचा प्रीमियम पूर्ण कालावधीसाठी सारखाच राहतो.</li>
+                    <li><strong>रायडर पर्याय:</strong> गंभीर आजार किंवा अपघाती अपंगत्वासाठी अतिरिक्त कव्हर जोडा.</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-info-circle"></i> महत्त्वाच्या गोष्टी</h3>
+                <ul>
+                    <li><strong>मॅच्युरिटी बेनिफिट नाही:</strong> जर तुम्ही पॉलिसी कालावधीनंतर जिवंत राहिलात, तर पैसे परत मिळत नाहीत.</li>
+                    <li><strong>लवकर गुंतवणूक:</strong> वय वाढल्यास किंवा आरोग्य समस्या निर्माण झाल्यास प्रीमियम लक्षणीय वाढतो.</li>
+                    <li><strong>पॉलिसी लॅप्स:</strong> प्रीमियम भरणे बंद केल्यास पॉलिसी शून्य मूल्यावर बंद होते.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>टर्म प्रोटेक्शन मास्टरी क्विझ</h2>
+        <form id="termQuiz">
+            <p><b>१. साध्या टर्म इन्शुरन्स प्लॅनमध्ये पॉलिसी कालावधीनंतर जिवंत राहिल्यास पैसे परत मिळतात का?</b></p>
+            <label><input type="radio" name="tq1" value="wrong"> हो, हे बचत खात्यासारखे काम करते.</label><br>
+            <label><input type="radio" name="tq1" value="correct"> नाही, ही फक्त मृत्यू लाभ योजना आहे ज्यात मॅच्युरिटीवर काहीही मिळत नाही.</label>
+
+            <p><b>२. कमी वयात टर्म इन्शुरन्स खरेदी करणे का चांगले मानले जाते?</b></p>
+            <label><input type="radio" name="tq2" value="correct"> कारण कमी वयात प्रीमियम खूप कमी असतो आणि तो आयुष्यभरासाठी लॉक होतो.</label><br>
+            <label><input type="radio" name="tq2" value="wrong"> कारण त्यासोबत मोफत भेटवस्तू मिळतात.</label>
+
+            <p style="margin-top:20px;"><b>प्रमाणपत्रासाठी नाव प्रविष्ट करा:</b></p>
+            <input type="text" id="termUserName" placeholder="पूर्ण नाव" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:6px;">
+            
+            <button type="button" class="btn-submit" onclick="validateTermQuiz()">सबमिट करा आणि प्रमाणपत्र मिळवा</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateTermQuiz() {
+        const name = document.getElementById('termUserName').value;
+        if(!name) { alert("कृपया तुमचे नाव प्रविष्ट करा!"); return; }
+
+        let score = 0;
+        const formData = new FormData(document.getElementById('termQuiz'));
+        for(let entry of formData.values()) { if(entry === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("अभिनंदन! तुम्ही आता टर्म इन्शुरन्स तज्ज्ञ आहात.");
+            window.location.href = "certificate.html";
+        } else {
+            alert("जवळपास पोहोचलात! वरील माहिती पुन्हा वाचा आणि प्रमाणपत्रासाठी पुन्हा प्रयत्न करा.");
+        }
+    }
+</script>
+
+</body>
+</html>

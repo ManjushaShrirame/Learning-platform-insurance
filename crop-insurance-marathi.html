@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पीक विमा - एग्री-शील्ड मास्टरक्लास</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --agri-green: #059669;
+            --agri-light: #ecfdf5;
+            --earth-brown: #78350f;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f0fdf4;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--agri-green);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--agri-green); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--agri-green); margin-top: 40px; border-bottom: 2px solid var(--agri-light); padding-bottom: 5px; }
+        h3 { color: var(--earth-brown); margin-top: 0; }
+
+        .info-card {
+            padding: 25px;
+            border-radius: 12px;
+            background: var(--agri-light);
+            margin-bottom: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #d1fae5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .feature-item i { color: var(--agri-green); font-size: 1.5rem; margin-bottom: 10px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #10b981; background: #f0fdf4; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #f59e0b; background: #fffbeb; padding: 25px; border-radius: 12px; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 2px dashed var(--agri-green);
+        }
+
+        .btn-submit {
+            background: var(--agri-green);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { background: #047857; }
+
+        @media (max-width: 600px) {
+            .pro-con-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--agri-green); font-weight:bold;">← लर्निंग हबवर परत जा</a>
+        <h1>पीक विमा (Crop Insurance)</h1>
+        <p>नैसर्गिक अनिश्चिततेपासून शेतीच्या पायाचे रक्षण करणे.</p>
+    </div>
+
+    <section>
+        <h2>पीक विमा म्हणजे काय?</h2>
+        <p>पीक विमा हे एक विशेष आर्थिक उत्पादन आहे जे शेतकऱ्यांच्या पिकाच्या नुकसानीमुळे होणाऱ्या आर्थिक हानीची भरपाई करते. हे नुकसान नैसर्गिक आपत्तींमुळे जसे की <b>दुष्काळ, पूर, गारपिटी किंवा भूस्खलन</b> तसेच जैविक धोके जसे की <b>कीड आणि रोगांचा प्रादुर्भाव</b> यामुळे होऊ शकते.</p>
+        
+        <p>अनेक ठिकाणी, सरकार हा विमा परवडणारा करण्यासाठी मोठी सबसिडी (अनुदान) देते. याचे मुख्य ध्येय हे आहे की एका खराब हंगामामुळे शेतकरी कायमस्वरूपी कर्जाच्या जाळ्यात अडकू नये.</p>
+    </section>
+
+    <section>
+        <h2>मुख्य फायदे आणि उपयोग</h2>
+        <div class="grid-container">
+            <div class="feature-item">
+                <i class="fas fa-umbrella"></i>
+                <strong>उत्पन्नाची स्थिरता:</strong>
+                हे एक सुरक्षा कवच प्रदान करते जेणेकरून पीक गेल्यानंतरही शेतकऱ्यांकडे पुढच्या हंगामासाठी बियाणे खरेदी करण्यास पैसे असतील.
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-hand-holding-usd"></i>
+                <strong>कर्ज मिळण्यास मदत:</strong>
+                विमा उतरवलेली पिके एक प्रकारची सुरक्षितता म्हणून काम करतात, ज्यामुळे बँकांकडून कर्ज मिळवणे सुलभ होते.
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-seedling"></i>
+                <strong>तंत्रज्ञानाचा वापर:</strong>
+                विम्यामुळे जोखीम कमी होते, ज्यामुळे शेतकरी अधिक उत्पन्न देणारी (पण महागडी) बियाणे आणि नवीन तंत्रज्ञान वापरण्यास धजावतात.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-thumbs-up"></i> फायदे</h3>
+                <ul>
+                    <li><strong>कमी प्रीमियम:</strong> सरकारी अनुदानामुळे, शेतकऱ्यांना प्रत्यक्ष खर्चाचा केवळ एक छोटा हिस्सा (१.५% - ५%) भरावा लागतो.</li>
+                    <li><strong>क्षेत्र-आधारित दावे:</strong> जर संपूर्ण गाव बाधित झाले असेल, तर हवामानाच्या आकडेवारीनुसार अनेकदा दावे आपोआप मंजूर केले जातात.</li>
+                    <li><strong>स्थलांतर रोखण्यास मदत:</strong> आर्थिक नुकसानीमुळे शेतकऱ्यांना शहराकडे स्थलांतर करण्याऐवजी स्वतःच्या शेतीत टिकून राहण्यास मदत होते.</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-thumbs-down"></i> आव्हाने / तोटे</h3>
+                <ul>
+                    <li><strong>नुकसान भरपाईस विलंब:</strong> शेतातील पिकांची प्रत्यक्ष पाहणी (Crop Cutting Experiments) करण्यास वेळ लागू शकतो, ज्यामुळे पैसे मिळण्यास उशीर होतो.</li>
+                    <li><strong>मर्यादित व्याप्ती:</strong> चुकीचे शेती नियोजन, चोरी किंवा शेतकऱ्याच्या चुकीमुळे लागलेली आग यांपासून होणारे नुकसान कव्हर केले जात नाही.</li>
+                    <li><strong>किमान क्षेत्राचे निकष:</strong> अनेकदा विशिष्ट क्षेत्रातील मोठ्या टक्केवारीचे नुकसान झाले असेल तरच दावे मंजूर केले जातात.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>एग्री-शील्ड मास्टर क्विझ</h2>
+        <form id="agriQuiz">
+            <p><b>१. शेतकऱ्याच्या स्वतःच्या सिंचन व्यवस्थेच्या अभावामुळे होणारे नुकसान पीक विमा कव्हर करतो का?</b></p>
+            <label><input type="radio" name="aq1" value="wrong"> हो, हे सर्व प्रकारच्या पीक नुकसानीसाठी संरक्षण देते.</label><br>
+            <label><input type="radio" name="aq1" value="correct"> नाही, हे केवळ अपरिहार्य नैसर्गिक आपत्तींपासून होणारे नुकसान कव्हर करते.</label>
+
+            <p><b>२. बँक कर्ज घेताना पीक विम्याची मदत कशी होते?</b></p>
+            <label><input type="radio" name="aq2" value="correct"> पीक गेलं तरी शेतकरी कर्जाची परतफेड करू शकेल याची शाश्वती मिळते.</label><br>
+            <label><input type="radio" name="aq2" value="wrong"> बँक कधीही व्याज लावणार नाही याची हमी मिळते.</label>
+
+            <p style="margin-top:20px;"><b>प्रमाणपत्रासाठी तुमचे नाव टाका:</b></p>
+            <input type="text" id="agriUserName" placeholder="पूर्ण नाव" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:6px;">
+            
+            <button type="button" class="btn-submit" onclick="validateAgriQuiz()">सबमिट करा आणि प्रमाणपत्र मिळवा</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateAgriQuiz() {
+        const name = document.getElementById('agriUserName').value;
+        if(!name) { alert("कृपया आधी तुमचे नाव टाका!"); return; }
+
+        let score = 0;
+        const formData = new FormData(document.getElementById('agriQuiz'));
+        for(let entry of formData.values()) { if(entry === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("उत्कृष्ट! तुम्हाला १००% गुण मिळाले आहेत. तुमचे प्रमाणपत्र तयार आहे!");
+            window.location.href = "certificate.html";
+        } else {
+            alert("प्रमाणपत्र मिळवण्यासाठी तुम्हाला सर्व प्रश्नांची अचूक उत्तरे देणे आवश्यक आहे. माहिती पुन्हा वाचा आणि प्रयत्न करा!");
+        }
+    }
+</script>
+
+</body>
+</html>

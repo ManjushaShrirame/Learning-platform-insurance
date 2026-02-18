@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ଫସଲ ବୀମା - ଏଗ୍ରି-ଶିଲ୍ଡ ମାଷ୍ଟରକ୍ଲାସ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --agri-green: #059669;
+            --agri-light: #ecfdf5;
+            --earth-brown: #78350f;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f0fdf4;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--agri-green);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--agri-green); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--agri-green); margin-top: 40px; border-bottom: 2px solid var(--agri-light); padding-bottom: 5px; }
+        h3 { color: var(--earth-brown); margin-top: 0; }
+
+        .info-card {
+            padding: 25px;
+            border-radius: 12px;
+            background: var(--agri-light);
+            margin-bottom: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #d1fae5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .feature-item i { color: var(--agri-green); font-size: 1.5rem; margin-bottom: 10px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #10b981; background: #f0fdf4; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #f59e0b; background: #fffbeb; padding: 25px; border-radius: 12px; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 2px dashed var(--agri-green);
+        }
+
+        .btn-submit {
+            background: var(--agri-green);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { background: #047857; }
+
+        @media (max-width: 600px) {
+            .pro-con-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--agri-green); font-weight:bold;">← ଲର୍ନିଂ ହବ୍‌କୁ ଫେରିଯାଆନ୍ତୁ</a>
+        <h1>ଫସଲ ବୀମା (Crop Insurance)</h1>
+        <p>ପ୍ରାକୃତିକ ଅନିଶ୍ଚିତତା ରୁ କୃଷିର ମୂଳଦୁଆକୁ ସୁରକ୍ଷା ପ୍ରଦାନ କରିବା ।</p>
+    </div>
+
+    <section>
+        <h2>ଫସଲ ବୀମା କ’ଣ?</h2>
+        <p>ଫସଲ ବୀମା ହେଉଛି ଏକ ବିଶେଷ ଆର୍ଥିକ ସୁରକ୍ଷା ଯୋଜନା, ଯାହା ଚାଷୀଙ୍କୁ ଫସଲ ହାନି ଜନିତ ଆର୍ଥିକ କ୍ଷତିର ଭରଣା କରିଥାଏ । ଏହି କ୍ଷତି ପ୍ରାକୃତିକ ବିପର୍ଯ୍ୟୟ ଯେପରିକି <b>ମରୁଡ଼ି, ବନ୍ୟା, କୁଆପଥର ମାଡ଼ କିମ୍ବା ଭୂସ୍ଖଳନ</b> ହେତୁ ହୋଇପାରେ କିମ୍ବା ଜୈବିକ ବିପଦ ଯେପରିକି <b>ପୋକ ଆକ୍ରମଣ ଏବଂ ରୋଗ</b> ଯୋଗୁଁ ହୋଇପାରେ ।</p>
+        
+        <p>ଅନେକ କ୍ଷେତ୍ରରେ, ସରକାର ଏହି ବୀମାକୁ ସୁଲଭ କରିବା ପାଇଁ ବହୁ ପରିମାଣର ସବସିଡି (ରିହାତି) ପ୍ରଦାନ କରନ୍ତି । ଏହାର ମୂଳ ଲକ୍ଷ୍ୟ ହେଉଛି ଗୋଟିଏ ସିଜନର ଫସଲ ଖରାପ ହେଲେ ଯେପରି ଚାଷୀ ସ୍ଥାୟୀ ଋଣ ଜାଲରେ ଫସି ନ ଯାଆନ୍ତି ।</p>
+    </section>
+
+    <section>
+        <h2>ମୁଖ୍ୟ ଲାଭ ଏବଂ ବ୍ୟବହାର</h2>
+        <div class="grid-container">
+            <div class="feature-item">
+                <i class="fas fa-umbrella"></i>
+                <strong>ଆୟରେ ସ୍ଥିରତା:</strong>
+                ଏହା ଏକ ସୁରକ୍ଷା କବଚ ପ୍ରଦାନ କରେ ଯାହାଫଳରେ ଫସଲ ହାନି ପରେ ମଧ୍ୟ ଚାଷୀଙ୍କ ପାଖରେ ପରବର୍ତ୍ତୀ ସିଜନ ପାଇଁ ବିହନ କିଣିବାକୁ ଟଙ୍କା ରହିବ ।
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-hand-holding-usd"></i>
+                <strong>ଋଣ ସୁବିଧା:</strong>
+                ବୀମାଭୁକ୍ତ ଫସଲ ଏକ ପ୍ରକାରର ଗ୍ୟାରେଣ୍ଟି ଭାବରେ କାମ କରେ, ଯାହାଦ୍ୱାରା ଚାଷୀଙ୍କୁ ବ୍ୟାଙ୍କରୁ ଋଣ ପାଇବା ସହଜ ହୋଇଥାଏ ।
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-seedling"></i>
+                <strong>ନୂତନ ଜ୍ଞାନକୌଶଳ:</strong>
+                ବୀମା ବିପଦକୁ କମ୍ କରିଥାଏ, ତେଣୁ ଚାଷୀ ଅଧିକ ଅମଳକ୍ଷମ (ଟିକେ ମହଙ୍ଗା ହେଲେ ମଧ୍ୟ) ବିହନ ଏବଂ ନୂତନ ପ୍ରଯୁକ୍ତିବିଦ୍ୟା ବ୍ୟବହାର କରିବାକୁ ସାହସ କରନ୍ତି ।
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-thumbs-up"></i> ସୁବିଧା</h3>
+                <ul>
+                    <li><strong>କମ୍ ପ୍ରିମିୟମ:</strong> ସରକାରୀ ସବସିଡି ଯୋଗୁଁ, ଚାଷୀଙ୍କୁ ପ୍ରକୃତ ଖର୍ଚ୍ଚର ମାତ୍ର କିଛି ଅଂଶ (୧.୫% - ୫%) ଦେବାକୁ ପଡ଼ିଥାଏ ।</li>
+                    <li><strong>ଅଞ୍ଚଳ ଭିତ୍ତିକ ଦାବି:</strong> ଯଦି ସମ୍ପୂର୍ଣ୍ଣ ଗାଁ ପ୍ରଭାବିତ ହୁଏ, ତେବେ ପାଣିପାଗ ତଥ୍ୟ ଆଧାରରେ ବୀମା ରାଶି ପ୍ରଦାନ ପ୍ରକ୍ରିୟା ସ୍ୱୟଂଚାଳିତ ଭାବେ ହୋଇଥାଏ ।</li>
+                    <li><strong>ପଳାୟନ ରୋକିବାରେ ସହାୟକ:</strong> ଏହା ଚାଷୀଙ୍କୁ ଆର୍ଥିକ ଦୁରାବସ୍ଥା ଯୋଗୁଁ ସହରକୁ ପଳାୟନ କରିବା ପରିବର୍ତ୍ତେ ନିଜ ଜମିରେ ଚାଷ କରି ରହିବାକୁ ସାହାଯ୍ୟ କରେ ।</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-thumbs-down"></i> ଆହ୍ୱାନ / ଅସୁବିଧା</h3>
+                <ul>
+                    <li><strong>ଆକଳନରେ ବିଳମ୍ବ:</strong> କ୍ଷେତରେ ଫସଲ କଟା ପରୀକ୍ଷା (Crop Cutting Experiments) କରିବାକୁ ସମୟ ଲାଗିପାରେ, ଯାହାଫଳରେ ଟଙ୍କା ପାଇବାରେ ବିଳମ୍ବ ହୁଏ ।</li>
+                    <li><strong>ସୀମିତ ପରିସର:</strong> ଚାଷୀଙ୍କ ଭୁଲ ନିଷ୍ପତ୍ତି, ଚୋରି କିମ୍ବା ଚାଷୀଙ୍କ ଅସାବଧାନତା ଯୋଗୁଁ ଲାଗିଥିବା ନିଆଁ ଜନିତ କ୍ଷତି ଏଥିରେ ଅନ୍ତର୍ଭୁକ୍ତ ନୁହେଁ ।</li>
+                    <li><strong>ନିର୍ଦ୍ଦିଷ୍ଟ କ୍ଷେତ୍ର ନିୟମ:</strong> ବେଳେବେଳେ ଏକ ନିର୍ଦ୍ଦିଷ୍ଟ ଅଞ୍ଚଳରେ ଏକ ବଡ଼ ଶତକଡ଼ା ଫସଲ ନଷ୍ଟ ହେଲେ ହିଁ ଦାବି ମଞ୍ଜୁର କରାଯାଏ ।</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>ଏଗ୍ରି-ଶିଲ୍ଡ ମାଷ୍ଟରୀ କୁଇଜ୍</h2>
+        <form id="agriQuiz">
+            <p><b>୧. ଚାଷୀ ନିଜେ ସଠିକ୍ ଜଳସେଚନ ବ୍ୟବସ୍ଥା କରିନଥିବା ଯୋଗୁଁ ହୋଇଥିବା ଫସଲ ହାନିକୁ ବୀମା କଭର୍ କରେ କି?</b></p>
+            <label><input type="radio" name="aq1" value="wrong"> ହଁ, ଏହା ସବୁ ପ୍ରକାରର ଫସଲ ହାନି ପାଇଁ ସୁରକ୍ଷା ଦିଏ ।</label><br>
+            <label><input type="radio" name="aq1" value="correct"> ନା, ଏହା କେବଳ ଅପରିହାର୍ଯ୍ୟ ପ୍ରାକୃତିକ ବିପର୍ଯ୍ୟୟକୁ କଭର୍ କରେ ।</label>
+
+            <p><b>୨. ବ୍ୟାଙ୍କ ଋଣ ନେବାରେ ଫସଲ ବୀମା କିପରି ସାହାଯ୍ୟ କରେ?</b></p>
+            <label><input type="radio" name="aq2" value="correct"> ଫସଲ ନଷ୍ଟ ହେଲେ ମଧ୍ୟ ଚାଷୀ ଋଣ ପରିଶୋଧ କରିପାରିବେ ବୋଲି ଏହା ଏକ ଭରସା ଦିଏ ।</label><br>
+            <label><input type="radio" name="aq2" value="wrong"> ବ୍ୟାଙ୍କ କେବେବି ସୁଧ ନେବ ନାହିଁ ବୋଲି ଏହା ଗ୍ୟାରେଣ୍ଟି ଦିଏ ।</label>
+
+            <p style="margin-top:20px;"><b>ପ୍ରମାଣପତ୍ର ପାଇଁ ଆପଣଙ୍କ ନାମ ଲେଖନ୍ତୁ:</b></p>
+            <input type="text" id="agriUserName" placeholder="ସମ୍ପୂର୍ଣ୍ଣ ନାମ" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:6px;">
+            
+            <button type="button" class="btn-submit" onclick="validateAgriQuiz()">ସବମିଟ୍ କରନ୍ତୁ ଏବଂ ପ୍ରମାଣପତ୍ର ପାଆନ୍ତୁ</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateAgriQuiz() {
+        const name = document.getElementById('agriUserName').value;
+        if(!name) { alert("ଦୟାକରି ପ୍ରଥମେ ଆପଣଙ୍କ ନାମ ଲେଖନ୍ତୁ!"); return; }
+
+        let score = 0;
+        const formData = new FormData(document.getElementById('agriQuiz'));
+        for(let entry of formData.values()) { if(entry === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("ଚମତ୍କାର! ଆପଣ ୧୦୦% ସ୍କୋର କରିଛନ୍ତି । ଆପଣଙ୍କ ପ୍ରମାଣପତ୍ର ପ୍ରସ୍ତୁତ ଅଛି!");
+            window.location.href = "certificate.html";
+        } else {
+            alert("ପ୍ରମାଣପତ୍ର ପାଇବା ପାଇଁ ଆପଣଙ୍କୁ ସମସ୍ତ ପ୍ରଶ୍ନର ସଠିକ୍ ଉତ୍ତର ଦେବାକୁ ହେବ । ସୂଚନାକୁ ପୁଣି ଥରେ ପଢନ୍ତୁ ଏବଂ ଚେଷ୍ଟା କରନ୍ତୁ!");
+        }
+    }
+</script>
+
+</body>
+</html>

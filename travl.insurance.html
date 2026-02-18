@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Insurance - Global Cover Masterclass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --travel-blue: #0ea5e9;
+            --travel-light: #f0f9ff;
+            --navy: #0f172a;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--travel-blue);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--travel-blue); font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--travel-blue); margin-top: 40px; border-bottom: 2px solid var(--travel-light); padding-bottom: 5px; }
+
+        .info-card {
+            padding: 25px;
+            border-radius: 12px;
+            background: var(--travel-light);
+            margin-bottom: 30px;
+            border: 1px solid #bae6fd;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .benefit-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .benefit-item:hover { transform: translateY(-5px); border-color: var(--travel-blue); }
+
+        .benefit-item i { color: var(--travel-blue); font-size: 1.8rem; margin-bottom: 15px; display: block; }
+
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .adv-box { border-top: 6px solid #0ea5e9; background: #f0f9ff; padding: 25px; border-radius: 12px; }
+        .dis-box { border-top: 6px solid #64748b; background: #f1f5f9; padding: 25px; border-radius: 12px; }
+
+        .quiz-box {
+            margin-top: 50px;
+            padding: 30px;
+            background: #0f172a;
+            color: white;
+            border-radius: 12px;
+        }
+
+        .quiz-box h2 { color: var(--travel-blue); border-color: #334155; }
+
+        .btn-submit {
+            background: var(--travel-blue);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) { .pro-con-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--travel-blue); font-weight:bold;">← Back to Learning Hub</a>
+        <h1>Travel Insurance</h1>
+        <p>Your safety net for global adventures and business trips.</p>
+    </div>
+
+    <section>
+        <h2>What is Travel Insurance?</h2>
+        <p>Travel insurance is a type of insurance that covers the costs and losses associated with traveling. It is an essential protection for those traveling domestically or abroad. It acts as a financial cushion against <b>unforeseen events</b> such as trip cancellations, medical emergencies, lost luggage, and flight delays.</p>
+    </section>
+
+    <section>
+        <h2>Key Benefits & Uses</h2>
+        <div class="benefit-grid">
+            <div class="benefit-item">
+                <i class="fas fa-briefcase-medical"></i>
+                <strong>Medical Emergencies:</strong>
+                Covers sudden illness or injury while abroad, which can otherwise cost thousands of dollars in foreign hospitals.
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-plane-slash"></i>
+                <strong>Trip Cancellation:</strong>
+                Reimburses non-refundable trip costs if you have to cancel due to a covered reason (e.g., family emergency or illness).
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-suitcase-rolling"></i>
+                <strong>Baggage Loss/Delay:</strong>
+                Provides funds to buy essentials if your bags are delayed and compensates you if they are permanently lost.
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-clock"></i>
+                <strong>Flight Delays:</strong>
+                Covers additional expenses for meals and accommodation if your flight is significantly delayed.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pro-con-grid">
+            <div class="adv-box">
+                <h3><i class="fas fa-check-circle"></i> Advantages</h3>
+                <ul>
+                    <li><strong>Global Support:</strong> 24/7 assistance for emergencies anywhere in the world.</li>
+                    <li><strong>Mandatory Requirement:</strong> Many countries (Schengen Area) require it for visa approval.</li>
+                    <li><strong>Legal Liability:</strong> Covers you if you accidentally injure someone or damage property while traveling.</li>
+                </ul>
+            </div>
+            <div class="dis-box">
+                <h3><i class="fas fa-exclamation-circle"></i> Disadvantages</h3>
+                <ul>
+                    <li><strong>Pre-existing Conditions:</strong> Often does not cover illnesses you already had before buying the policy.</li>
+                    <li><strong>Exclusions:</strong> Adventure sports (skydiving, bungee jumping) often require a separate, extra-cost rider.</li>
+                    <li><strong>Documentation:</strong> Requires heavy paperwork (police reports for theft, medical reports for illness) to file a claim.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-box">
+        <h2>Global Traveler Quiz</h2>
+        <form id="travelQuiz">
+            <p><b>1. If your flight is delayed for 12 hours, which benefit covers your hotel stay?</b></p>
+            <label><input type="radio" name="tq1" value="correct"> Trip Delay / Missed Connection</label><br>
+            <label><input type="radio" name="tq1" value="wrong"> Life Insurance</label>
+
+            <p><b>2. Does standard travel insurance usually cover extreme sports like skydiving?</b></p>
+            <label><input type="radio" name="tq2" value="wrong"> Yes, it covers everything.</label><br>
+            <label><input type="radio" name="tq2" value="correct"> No, it usually requires a special add-on or rider.</label>
+
+            <p style="margin-top:20px;"><b>Traveler's Name:</b></p>
+            <input type="text" id="travelerName" placeholder="Enter Full Name" style="width:100%; padding:12px; margin-bottom:10px; border-radius:6px; border:none;">
+            
+            <button type="button" class="btn-submit" onclick="validateTravelQuiz()">Claim Your Travel Certificate</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateTravelQuiz() {
+        const name = document.getElementById('travelerName').value;
+        if(!name) { alert("Please enter your name!"); return; }
+
+        let score = 0;
+        const formData = new FormData(document.getElementById('travelQuiz'));
+        for(let entry of formData.values()) { if(entry === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("Safe travels! You've passed the Global Cover Masterclass.");
+            window.location.href = "certificate.html";
+        } else {
+            alert("Oops! Review the benefits above and try again for your certificate.");
+        }
+    }
+</script>
+
+</body>
+</html>

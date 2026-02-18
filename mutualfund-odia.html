@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ମ୍ୟୁଚୁଆଲ୍ ଫଣ୍ଡ୍ ମାଷ୍ଟରକ୍ଲାସ୍</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --mf-primary: #f59e0b; /* ଆମ୍ବର/ଅରେଞ୍ଜ ରଙ୍ଗ */
+            --mf-light: #fffbeb;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f1f5f9;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--mf-primary);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--mf-primary); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--mf-primary); margin-top: 40px; border-bottom: 2px solid var(--mf-light); }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            padding: 20px;
+            border-radius: 12px;
+            background: var(--mf-light);
+        }
+
+        .adv-box { border-top: 5px solid #22c55e; background: #f0fdf4; }
+        .dis-box { border-top: 5px solid #ef4444; background: #fef2f2; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-section {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn-submit {
+            background: var(--mf-primary);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.9;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--mf-primary); font-weight:bold;">← ହବ୍‌କୁ ଫେରିଯାଆନ୍ତୁ</a>
+        <h1>ମ୍ୟୁଚୁଆଲ୍ ଫଣ୍ଡ୍ (Mutual Funds)</h1>
+        <p>ଆପଣଙ୍କର ସମ୍ବଳକୁ ଏକତ୍ରିତ କରନ୍ତୁ ଏବଂ ବିଶେଷଜ୍ଞଙ୍କ ମାଧ୍ୟମରେ ଆପଣଙ୍କ ସମ୍ପତ୍ତି ବୃଦ୍ଧି କରନ୍ତୁ।</p>
+    </div>
+
+    <section>
+        <h2>ମ୍ୟୁଚୁଆଲ୍ ଫଣ୍ଡ୍ କ'ଣ?</h2>
+        <p>ମ୍ୟୁଚୁଆଲ୍ ଫଣ୍ଡ୍ ହେଉଛି ଏକ ଆର୍ଥିକ ମାଧ୍ୟମ ଯାହା ଅନେକ ନିବେଶକଙ୍କଠାରୁ ଅର୍ଥ ସଂଗ୍ରହ କରିଥାଏ ଏବଂ ସେହି ଅର୍ଥକୁ ଷ୍ଟକ୍, ବଣ୍ଡ୍ ଏବଂ ଅନ୍ୟାନ୍ୟ ସିକ୍ୟୁରିଟିରେ ନିବେଶ କରିଥାଏ। ଏହି ସମସ୍ତ ନିବେଶର ମିଶ୍ରଣକୁ <b>ପୋର୍ଟଫୋଲିଓ (Portfolio)</b> କୁହାଯାଏ। ପ୍ରତ୍ୟେକ ନିବେଶକଙ୍କୁ ସେମାନଙ୍କର ନିବେଶ ଅନୁଯାୟୀ 'ୟୁନିଟ୍' ମିଳିଥାଏ। ଏହି ଫଣ୍ଡର ପରିଚାଳନା ଜଣେ ଦକ୍ଷ <b>ଫଣ୍ଡ ମ୍ୟାନେଜର</b>ଙ୍କ ଦ୍ୱାରା କରାଯାଇଥାଏ।</p>
+    </section>
+
+    <section>
+        <h2>ମୁଖ୍ୟ ବିଷୟ ଏବଂ ବୈଶିଷ୍ଟ୍ୟ</h2>
+        <div class="info-card">
+            <ul>
+                <li><strong>NAV (ନେଟ୍ ଆସେଟ୍ ଭାଲ୍ୟୁ):</strong> ମ୍ୟୁଚୁଆଲ୍ ଫଣ୍ଡ୍ ସ୍କିମ୍‌ର ଗୋଟିଏ ୟୁନିଟ୍‌ର ବଜାର ମୂଲ୍ୟ।</li>
+                <li><strong>SIP (ସିଷ୍ଟମାଟିକ୍ ଇନଭେଷ୍ଟମେଣ୍ଟ ପ୍ଲାନ୍):</strong> ଚକ୍ରବୃଦ୍ଧି (Compounding) ର ଲାଭ ପାଇବା ପାଇଁ ନିୟମିତ ଭାବରେ (ମାସିକ/ତ୍ରୈମାସିକ) ଏକ ନିର୍ଦ୍ଦିଷ୍ଟ ପରିମାଣର ନିବେଶ କରିବା।</li>
+                <li><strong>ବିବିଧତା (Diversification):</strong> ବିପଦ ବା ରିସ୍କ କମାଇବା ପାଇଁ ଟଙ୍କାକୁ ବିଭିନ୍ନ କ୍ଷେତ୍ର କିମ୍ବା କମ୍ପାନୀରେ ବିଭକ୍ତ କରି ନିବେଶ କରିବା।</li>
+                <li><strong>ଏକ୍ସପେନ୍ସ ରେସିଓ (Expense Ratio):</strong> ଆପଣଙ୍କ ଅର୍ଥର ପରିଚାଳନା ପାଇଁ ଫଣ୍ଡ ହାଉସ୍ ଦ୍ୱାରା ନିଆଯାଉଥିବା ବାର୍ଷିକ ଶୁଳ୍କ।</li>
+                <li><strong>ELSS (ଟ୍ୟାକ୍ସ ସେଭିଙ୍ଗ୍):</strong> ଏକ ଇକ୍ୱିଟି ସ୍କିମ୍ ଯାହା ଆୟକର ଅଧିନିୟମର ସେକ୍ସନ୍ 80C ଅନୁଯାୟୀ କର ଛାଡ଼ର ସୁବିଧା ଦେଇଥାଏ।</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid-info">
+            <div class="info-card adv-box">
+                <h3><i class="fas fa-chart-line"></i> ଲାଭ / ସୁବିଧା</h3>
+                <ul>
+                    <li>ଅଭିଜ୍ଞ ଫଣ୍ଡ ମ୍ୟାନେଜରଙ୍କ ଦ୍ୱାରା ବୃତ୍ତିଗତ ପରିଚାଳନା।</li>
+                    <li>ଅଳ୍ପ ଟଙ୍କାରୁ ବିବିଧ କ୍ଷେତ୍ରରେ ନିବେଶ କରିବାର ସୁଯୋଗ।</li>
+                    <li>ଲିକ୍ୱିଡିଟି (Liquidity) - ଆବଶ୍ୟକ ସମୟରେ ଯେକୌଣସି ସମୟରେ ଟଙ୍କା ବାହାର କରିହେବ।</li>
+                    <li>SEBI ଦ୍ୱାରା ନିୟନ୍ତ୍ରିତ ହେଉଥିବାରୁ ଏହା ସ୍ୱଚ୍ଛ ଏବଂ ନିରାପଦ।</li>
+                </ul>
+            </div>
+            <div class="info-card dis-box">
+                <h3><i class="fas fa-exclamation-triangle"></i> ବିପଦ (Risks)</h3>
+                <ul>
+                    <li>ବଜାର ବିପଦ: ଲାଭର କୌଣସି ଗ୍ୟାରେଣ୍ଟି ନଥାଏ, ଏହା ବଜାରର ଚଢ଼ା-ଉତାର ଉପରେ ନିର୍ଭର କରେ।</li>
+                    <li>ପରିଚାଳନା ଶୁଳ୍କ: ଫଣ୍ଡର ପ୍ରଦର୍ଶନ ଭଲ ନଥିଲେ ମଧ୍ୟ ଫିସ୍ ଦେବାକୁ ପଡ଼ିଥାଏ।</li>
+                    <li>ଏକ୍ଜିଟ୍ ଲୋଡ୍: ସମୟ ପୂର୍ବରୁ ଟଙ୍କା ବାହାର କଲେ କିଛି ଶୁଳ୍କ ଲାଗିଥାଏ।</li>
+                    <li>ବ୍ୟକ୍ତିଗତ ନିୟନ୍ତ୍ରଣ ନଥାଏ: ଷ୍ଟକ୍ ଚୟନ ସମ୍ପୂର୍ଣ୍ଣ ଭାବେ ଫଣ୍ଡ ମ୍ୟାନେଜରଙ୍କ ଉପରେ ନିର୍ଭର କରେ।</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-section">
+        <h2>କ୍ୱିକ୍ ଚେକ୍: ମ୍ୟୁଚୁଆଲ୍ ଫଣ୍ଡ୍ ଜ୍ଞାନ</h2>
+        <form id="mfQuiz">
+            <p><b>1. "SIP" ର ପୂରା ନାମ କ'ଣ?</b></p>
+            <label><input type="radio" name="q1" value="correct"> ସିଷ୍ଟମାଟିକ୍ ଇନଭେଷ୍ଟମେଣ୍ଟ ପ୍ଲାନ୍ (Systematic Investment Plan)</label><br>
+            <label><input type="radio" name="q1" value="wrong"> ଷ୍ଟାଣ୍ଡାର୍ଡ ଇଣ୍ଟରନାଲ୍ ପୋର୍ଟଫୋଲିଓ (Standard Internal Portfolio)</label>
+
+            <p><b>2. ସେକ୍ସନ୍ 80C ଅଧିନିୟମରେ କେଉଁ ସ୍କିମ୍ କର ରିହାତି ଦେଇଥାଏ?</b></p>
+            <label><input type="radio" name="q2" value="wrong"> ଲିକ୍ୱିଡ୍ ଫଣ୍ଡ୍ (Liquid Fund)</label><br>
+            <label><input type="radio" name="q2" value="correct"> ELSS (Equity Linked Savings Scheme)</label>
+
+            <p style="margin-top:20px;"><b>ସାର୍ଟିଫିକେଟ୍ ପାଇଁ ଆପଣଙ୍କ ନାମ ଲେଖନ୍ତୁ:</b></p>
+            <input type="text" id="userName" placeholder="ଆପଣଙ୍କ ପୂରା ନାମ">
+            
+            <button type="button" class="btn-submit" onclick="checkMFScore()">ସବମିଟ୍ କରନ୍ତୁ ଏବଂ ସାର୍ଟିଫିକେଟ୍ ପାଆନ୍ତୁ</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function checkMFScore() {
+        const name = document.getElementById('userName').value;
+        if(!name) { alert("ଦୟାକରି ଆପଣଙ୍କ ନାମ ଲେଖନ୍ତୁ"); return; }
+
+        let score = 0;
+        const answers = new FormData(document.getElementById('mfQuiz'));
+        for(let v of answers.values()) { if(v === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("ଅତି ସୁନ୍ଦର! ଆପଣ ମ୍ୟୁଚୁଆଲ୍ ଫଣ୍ଡ୍ ବିଷୟରେ ସଫଳତାର ସହ ଶିଖିଛନ୍ତି। ରିଡାଇରେକ୍ଟ ହେଉଛି...");
+            window.location.href = "certificate.html";
+        } else {
+            alert("ସାର୍ଟିଫିକେଟ୍ ପାଇବା ପାଇଁ ଦୟାକରି ସମସ୍ତ ପ୍ରଶ୍ନର ସଠିକ୍ ଉତ୍ତର ଦିଅନ୍ତୁ!");
+        }
+    }
+</script>
+
+</body>
+</html>

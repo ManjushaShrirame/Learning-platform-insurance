@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हेल्थ इंश्योरेंस मास्टरक्लास</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --health-primary: #ef4444;
+            --health-light: #fef2f2;
+            --text-main: #1e293b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            background: #f1f5f9;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-box {
+            border-left: 8px solid var(--health-primary);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--health-primary); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--health-primary); margin-top: 40px; border-bottom: 2px solid var(--health-light); }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            padding: 20px;
+            border-radius: 12px;
+            background: var(--health-light);
+        }
+
+        .adv-box { border-top: 5px solid #22c55e; background: #f0fdf4; }
+        .dis-box { border-top: 5px solid #f97316; background: #fff7ed; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .quiz-section {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn-submit {
+            background: var(--health-primary);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-box">
+        <a href="index.html" style="text-decoration:none; color:var(--health-primary); font-weight:bold;">← वापस हब पर जाएं</a>
+        <h1>हेल्थ इंश्योरेंस (स्वास्थ्य बीमा)</h1>
+        <p>बढ़ती चिकित्सा लागत और अचानक आने वाली स्वास्थ्य आपात स्थितियों के खिलाफ आपका अंतिम सुरक्षा कवच।</p>
+    </div>
+
+    <section>
+        <h2>हेल्थ इंश्योरेंस क्या है?</h2>
+        <p>हेल्थ इंश्योरेंस एक प्रकार का बीमा कवरेज है जो बीमित व्यक्ति द्वारा किए गए चिकित्सा, शल्य चिकित्सा (सर्जरी) और कभी-कभी दंत चिकित्सा खर्चों का भुगतान करता है। यह या तो बीमारी या चोट से होने वाले खर्चों की भरपाई करता है, या सीधे अस्पताल को भुगतान करता है। यह आपके और बीमा कंपनी के बीच एक अनुबंध है जहाँ आप सुरक्षित रहने के लिए <b>प्रीमियम</b> का भुगतान करते हैं।</p>
+    </section>
+
+    <section>
+        <h2>लाभ और उपयोग</h2>
+        <div class="info-card">
+            <ul>
+                <li><strong>अस्पताल में भर्ती होने का खर्च:</strong> इसमें कमरे का किराया, आईसीयू शुल्क और डॉक्टर की फीस शामिल है।</li>
+                <li><strong>कैशलेस उपचार:</strong> बिना जेब से भुगतान किए नेटवर्क अस्पतालों में इलाज कराएं।</li>
+                <li><strong>अस्पताल में भर्ती होने से पहले और बाद का खर्च:</strong> भर्ती होने से पहले और छुट्टी मिलने के बाद के दवा बिल और टेस्ट के खर्च कवर होते हैं।</li>
+                <li><strong>एम्बुलेंस कवर:</strong> मरीज को अस्पताल ले जाने का खर्च।</li>
+                <li><strong>गंभीर बीमारी कवर:</strong> कैंसर या स्ट्रोक जैसी जानलेवा बीमारियों के लिए एकमुश्त राशि।</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid-info">
+            <div class="info-card adv-box">
+                <h3><i class="fas fa-plus-circle"></i> फायदे</h3>
+                <ul>
+                    <li>आपात स्थिति के दौरान वित्तीय मानसिक शांति।</li>
+                    <li>बिल की चिंता किए बिना सर्वोत्तम चिकित्सा सुविधाओं तक पहुंच।</li>
+                    <li>धारा 80D के तहत टैक्स लाभ (₹25,000 - ₹50,000 तक)।</li>
+                    <li>मुफ़्त वार्षिक स्वास्थ्य जाँच (Health Check-ups)।</li>
+                </ul>
+            </div>
+            <div class="info-card dis-box">
+                <h3><i class="fas fa-minus-circle"></i> नुकसान/सीमाएं</h3>
+                <ul>
+                    <li>उम्र बढ़ने के साथ प्रीमियम बढ़ता जाता है।</li>
+                    <li><strong>वेटिंग पीरियड:</strong> कुछ बीमारियां 2-4 साल बाद ही कवर होती हैं।</li>
+                    <li>अपवाद: कॉस्मेटिक सर्जरी आमतौर पर कवर नहीं की जाती हैं।</li>
+                    <li>को-पे (Co-pay) और डिडक्टिबल्स जैसी जटिल शर्तें।</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quiz-section">
+        <h2>त्वरित जाँच: स्वास्थ्य ज्ञान</h2>
+        <form id="healthQuiz">
+            <p><b>1. "कैशलेस उपचार" (Cashless Treatment) क्या है?</b></p>
+            <label><input type="radio" name="q1" value="correct"> बीमा कंपनी सीधे अस्पताल को भुगतान करती है।</label><br>
+            <label><input type="radio" name="q1" value="wrong"> आप नकद भुगतान करते हैं और छूट पाते हैं।</label>
+
+            <p><b>2. हेल्थ इंश्योरेंस के लिए कौन सी टैक्स धारा लाभ देती है?</b></p>
+            <label><input type="radio" name="q2" value="wrong"> धारा 80C</label><br>
+            <label><input type="radio" name="q2" value="correct"> धारा 80D</label>
+
+            <p style="margin-top:20px;"><b>सर्टिफिकेट के लिए नाम दर्ज करें:</b></p>
+            <input type="text" id="userName" placeholder="आपका नाम" style="width:100%; padding:10px; margin-bottom:20px;">
+            
+            <button type="button" class="btn-submit" onclick="checkHealthScore()">सबमिट करें और सर्टिफिकेट प्राप्त करें</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function checkHealthScore() {
+        const name = document.getElementById('userName').value;
+        if(!name) { alert("कृपया अपना नाम दर्ज करें"); return; }
+
+        let score = 0;
+        const answers = new FormData(document.getElementById('healthQuiz'));
+        for(let v of answers.values()) { if(v === "correct") score++; }
+
+        if(score === 2) {
+            localStorage.setItem("certName", name);
+            alert("शानदार! आपके स्वास्थ्य प्रमाणपत्र पर भेजा जा रहा है...");
+            window.location.href = "certificate.html";
+        } else {
+            alert("सर्टिफिकेट पाने के लिए कृपया सभी प्रश्नों के सही उत्तर दें!");
+        }
+    }
+</script>
+
+</body>
+</html>
